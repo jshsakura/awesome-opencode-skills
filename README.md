@@ -35,80 +35,40 @@
 </div>
 
 
-# Awesome Codex Subagents
+# Awesome OpenCode Skills
+
+
+> **Note:** This repository ([jshsakura/awesome-opencode-subagents](https://github.com/jshsakura/awesome-opencode-subagents)) is an automatically synchronized port of the original [VoltAgent/awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents). All core subagents and credit belong to the original authors. This project simply adapts the 136+ subagents into the **OpenCode Skills** format (`SKILL.md`) for seamless use in OpenCode.
+
 
 This repository serves as the definitive collection of [Codex Subagents](https://developers.openai.com/codex/subagents), specialized AI assistants designed for specific development tasks. Written specifically for Codex and aligned with the official docs.
 
-## Installation
 
-Use Codex custom agent directories exactly as documented:
+## 🚀 Installation & Deployment
 
-- `~/.codex/agents/` for global agents (available in all projects)
-- `.codex/agents/` for project-specific agents (higher precedence in that repo)
+OpenCode loads skills automatically from specific directories on your machine. You can install all 136+ skills via a single command:
 
-1. Clone this repository.
-2. Copy the `.toml` agent files you want into one of the directories above.
-3. Restart or refresh your Codex session if needed.
-4. Delegate explicitly in prompts (Codex does not auto-spawn custom subagents).
+**Windows (PowerShell)**:
+```powershell
+irm https://raw.githubusercontent.com/jshsakura/awesome-opencode-subagents/main/install.ps1 | iex
+```
 
-Examples:
+**macOS / Linux**:
 ```bash
-mkdir -p ~/.codex/agents
-cp categories/01-core-development/backend-developer.toml ~/.codex/agents/
+curl -sL https://raw.githubusercontent.com/jshsakura/awesome-opencode-subagents/main/install.sh | bash
 ```
 
+**Alternative (Python)**:
+If you cloned the repository locally:
 ```bash
-mkdir -p .codex/agents
-cp categories/04-quality-security/reviewer.toml .codex/agents/
+python install.py
 ```
 
-If you use agent configuration in Codex, keep it in `.codex/config.toml` under `[agents]` as described in the official docs.
+## 🔄 Update Cycle & Sync
 
-
-### Subagent Storage Locations
-
-| Type | Path | Availability | Precedence |
-|------|------|--------------|------------|
-| Project Subagents | `.codex/agents/` | Current project only | Higher |
-| Global Subagents | `~/.codex/agents/` | All projects | Lower |
-
-Note: When naming conflicts occur, project-specific subagents override global ones.
-
-
-## Subagent Structure
-
-Each subagent uses a Codex-native `.toml` format:
-
-```toml
-name = "subagent-name"
-description = "When this agent should be invoked"
-model = "gpt-5.3-codex-spark"
-model_reasoning_effort = "medium"
-sandbox_mode = "read-only"
-
-[instructions]
-text = """
-You are a [role description and expertise areas]...
-
-[Agent-specific checklists, patterns, and guidelines]...
-"""
-```
-
-### Smart Model Routing
-
-Each subagent includes a `model` field that automatically routes it to the right model -- balancing quality and cost:
-
-| Model | When It's Used | Examples |
-|-------|----------------|----------|
-| `gpt-5.4` | Deep reasoning -- architecture reviews, security audits, financial logic | `security-auditor`, `architect-reviewer`, `fintech-engineer` |
-| `gpt-5.3-codex-spark` | Fast scanning, synthesis, and lighter research tasks | `search-specialist`, `docs-researcher`, `agent-installer` |
-
-### Sandbox Mode Philosophy
-
-Each subagent's `sandbox_mode` field controls filesystem access:
-- **Read-only agents** (reviewers, auditors): `sandbox_mode = "read-only"` - analyze without modifying
-- **Workspace-write agents** (developers, engineers): `sandbox_mode = "workspace-write"` - create and modify files
-
+This repository maintains a 1:1 synchronization with the original `VoltAgent` repository. 
+- **GitHub Actions Automation**: A sync job runs every Sunday (`scripts/sync.py`), fetching the latest agents from the original project and automatically updating the native OpenCode `skills/` directory. 
+- To update your local OpenCode skills, simply run the installation command above again!
 
 ## Categories
 
@@ -116,93 +76,93 @@ Each subagent's `sandbox_mode` field controls filesystem access:
 
 Essential development subagents for everyday coding tasks.
 
-- [**api-designer**](categories/01-core-development/api-designer.toml) - REST and GraphQL API architect
-- [**backend-developer**](categories/01-core-development/backend-developer.toml) - Server-side expert for scalable APIs
-- [**code-mapper**](categories/01-core-development/code-mapper.toml) - Code path mapping and ownership boundary analysis
-- [**electron-pro**](categories/01-core-development/electron-pro.toml) - Desktop application expert
-- [**frontend-developer**](categories/01-core-development/frontend-developer.toml) - UI/UX specialist for React, Vue, and Angular
-- [**fullstack-developer**](categories/01-core-development/fullstack-developer.toml) - End-to-end feature development
-- [**graphql-architect**](categories/01-core-development/graphql-architect.toml) - GraphQL schema and federation expert
-- [**microservices-architect**](categories/01-core-development/microservices-architect.toml) - Distributed systems designer
-- [**mobile-developer**](categories/01-core-development/mobile-developer.toml) - Cross-platform mobile specialist
-- [**ui-designer**](categories/01-core-development/ui-designer.toml) - Visual design and interaction specialist
-- [**ui-fixer**](categories/01-core-development/ui-fixer.toml) - Smallest safe patch for reproduced UI issues
-- [**websocket-engineer**](categories/01-core-development/websocket-engineer.toml) - Real-time communication specialist
+- [**api-designer**](skills/api-designer/SKILL.md) - REST and GraphQL API architect
+- [**backend-developer**](skills/backend-developer/SKILL.md) - Server-side expert for scalable APIs
+- [**code-mapper**](skills/code-mapper/SKILL.md) - Code path mapping and ownership boundary analysis
+- [**electron-pro**](skills/electron-pro/SKILL.md) - Desktop application expert
+- [**frontend-developer**](skills/frontend-developer/SKILL.md) - UI/UX specialist for React, Vue, and Angular
+- [**fullstack-developer**](skills/fullstack-developer/SKILL.md) - End-to-end feature development
+- [**graphql-architect**](skills/graphql-architect/SKILL.md) - GraphQL schema and federation expert
+- [**microservices-architect**](skills/microservices-architect/SKILL.md) - Distributed systems designer
+- [**mobile-developer**](skills/mobile-developer/SKILL.md) - Cross-platform mobile specialist
+- [**ui-designer**](skills/ui-designer/SKILL.md) - Visual design and interaction specialist
+- [**ui-fixer**](skills/ui-fixer/SKILL.md) - Smallest safe patch for reproduced UI issues
+- [**websocket-engineer**](skills/websocket-engineer/SKILL.md) - Real-time communication specialist
 
 ### [02. Language Specialists](categories/02-language-specialists/)
 
 Language-specific experts with deep framework knowledge.
-- [**angular-architect**](categories/02-language-specialists/angular-architect.toml) - Angular 15+ enterprise patterns expert
-- [**cpp-pro**](categories/02-language-specialists/cpp-pro.toml) - C++ performance expert
-- [**csharp-developer**](categories/02-language-specialists/csharp-developer.toml) - .NET ecosystem specialist
-- [**django-developer**](categories/02-language-specialists/django-developer.toml) - Django 4+ web development expert
-- [**dotnet-core-expert**](categories/02-language-specialists/dotnet-core-expert.toml) - .NET 8 cross-platform specialist
-- [**dotnet-framework-4.8-expert**](categories/02-language-specialists/dotnet-framework-4.8-expert.toml) - .NET Framework legacy enterprise specialist
-- [**elixir-expert**](categories/02-language-specialists/elixir-expert.toml) - Elixir and OTP fault-tolerant systems expert
-- [**erlang-expert**](categories/02-language-specialists/erlang-expert.toml) - Erlang/OTP and rebar3 engineering expert
-- [**flutter-expert**](categories/02-language-specialists/flutter-expert.toml) - Flutter 3+ cross-platform mobile expert
-- [**golang-pro**](categories/02-language-specialists/golang-pro.toml) - Go concurrency specialist
-- [**java-architect**](categories/02-language-specialists/java-architect.toml) - Enterprise Java expert
-- [**javascript-pro**](categories/02-language-specialists/javascript-pro.toml) - JavaScript development expert
-- [**kotlin-specialist**](categories/02-language-specialists/kotlin-specialist.toml) - Modern JVM language expert
-- [**laravel-specialist**](categories/02-language-specialists/laravel-specialist.toml) - Laravel 10+ PHP framework expert
-- [**nextjs-developer**](categories/02-language-specialists/nextjs-developer.toml) - Next.js 14+ full-stack specialist
-- [**php-pro**](categories/02-language-specialists/php-pro.toml) - PHP web development expert
-- [**powershell-5.1-expert**](categories/02-language-specialists/powershell-5.1-expert.toml) - Windows PowerShell 5.1 and full .NET Framework automation specialist
-- [**powershell-7-expert**](categories/02-language-specialists/powershell-7-expert.toml) - Cross-platform PowerShell 7+ automation and modern .NET specialist
-- [**python-pro**](categories/02-language-specialists/python-pro.toml) - Python ecosystem master
-- [**rails-expert**](categories/02-language-specialists/rails-expert.toml) - Rails 8.1 rapid development expert
-- [**react-specialist**](categories/02-language-specialists/react-specialist.toml) - React 18+ modern patterns expert
-- [**rust-engineer**](categories/02-language-specialists/rust-engineer.toml) - Systems programming expert
-- [**spring-boot-engineer**](categories/02-language-specialists/spring-boot-engineer.toml) - Spring Boot 3+ microservices expert
-- [**sql-pro**](categories/02-language-specialists/sql-pro.toml) - Database query expert
-- [**swift-expert**](categories/02-language-specialists/swift-expert.toml) - iOS and macOS specialist
-- [**typescript-pro**](categories/02-language-specialists/typescript-pro.toml) - TypeScript specialist
-- [**vue-expert**](categories/02-language-specialists/vue-expert.toml) - Vue 3 Composition API expert
+- [**angular-architect**](skills/angular-architect/SKILL.md) - Angular 15+ enterprise patterns expert
+- [**cpp-pro**](skills/cpp-pro/SKILL.md) - C++ performance expert
+- [**csharp-developer**](skills/csharp-developer/SKILL.md) - .NET ecosystem specialist
+- [**django-developer**](skills/django-developer/SKILL.md) - Django 4+ web development expert
+- [**dotnet-core-expert**](skills/dotnet-core-expert/SKILL.md) - .NET 8 cross-platform specialist
+- [**dotnet-framework-4.8-expert**](skills/dotnet-framework-4.8-expert/SKILL.md) - .NET Framework legacy enterprise specialist
+- [**elixir-expert**](skills/elixir-expert/SKILL.md) - Elixir and OTP fault-tolerant systems expert
+- [**erlang-expert**](skills/erlang-expert/SKILL.md) - Erlang/OTP and rebar3 engineering expert
+- [**flutter-expert**](skills/flutter-expert/SKILL.md) - Flutter 3+ cross-platform mobile expert
+- [**golang-pro**](skills/golang-pro/SKILL.md) - Go concurrency specialist
+- [**java-architect**](skills/java-architect/SKILL.md) - Enterprise Java expert
+- [**javascript-pro**](skills/javascript-pro/SKILL.md) - JavaScript development expert
+- [**kotlin-specialist**](skills/kotlin-specialist/SKILL.md) - Modern JVM language expert
+- [**laravel-specialist**](skills/laravel-specialist/SKILL.md) - Laravel 10+ PHP framework expert
+- [**nextjs-developer**](skills/nextjs-developer/SKILL.md) - Next.js 14+ full-stack specialist
+- [**php-pro**](skills/php-pro/SKILL.md) - PHP web development expert
+- [**powershell-5.1-expert**](skills/powershell-5.1-expert/SKILL.md) - Windows PowerShell 5.1 and full .NET Framework automation specialist
+- [**powershell-7-expert**](skills/powershell-7-expert/SKILL.md) - Cross-platform PowerShell 7+ automation and modern .NET specialist
+- [**python-pro**](skills/python-pro/SKILL.md) - Python ecosystem master
+- [**rails-expert**](skills/rails-expert/SKILL.md) - Rails 8.1 rapid development expert
+- [**react-specialist**](skills/react-specialist/SKILL.md) - React 18+ modern patterns expert
+- [**rust-engineer**](skills/rust-engineer/SKILL.md) - Systems programming expert
+- [**spring-boot-engineer**](skills/spring-boot-engineer/SKILL.md) - Spring Boot 3+ microservices expert
+- [**sql-pro**](skills/sql-pro/SKILL.md) - Database query expert
+- [**swift-expert**](skills/swift-expert/SKILL.md) - iOS and macOS specialist
+- [**typescript-pro**](skills/typescript-pro/SKILL.md) - TypeScript specialist
+- [**vue-expert**](skills/vue-expert/SKILL.md) - Vue 3 Composition API expert
 
 
 ### [03. Infrastructure](categories/03-infrastructure/)
 
 DevOps, cloud, and deployment specialists.
 
-- [**azure-infra-engineer**](categories/03-infrastructure/azure-infra-engineer.toml) - Azure infrastructure and Az PowerShell automation expert
-- [**cloud-architect**](categories/03-infrastructure/cloud-architect.toml) - AWS/GCP/Azure specialist
-- [**database-administrator**](categories/03-infrastructure/database-administrator.toml) - Database management expert
-- [**deployment-engineer**](categories/03-infrastructure/deployment-engineer.toml) - Deployment automation specialist
-- [**devops-engineer**](categories/03-infrastructure/devops-engineer.toml) - CI/CD and automation expert
-- [**devops-incident-responder**](categories/03-infrastructure/devops-incident-responder.toml) - DevOps incident management
-- [**docker-expert**](categories/03-infrastructure/docker-expert.toml) - Docker containerization and optimization expert
-- [**incident-responder**](categories/03-infrastructure/incident-responder.toml) - System incident response expert
-- [**kubernetes-specialist**](categories/03-infrastructure/kubernetes-specialist.toml) - Container orchestration master
-- [**network-engineer**](categories/03-infrastructure/network-engineer.toml) - Network infrastructure specialist
-- [**platform-engineer**](categories/03-infrastructure/platform-engineer.toml) - Platform architecture expert
-- [**security-engineer**](categories/03-infrastructure/security-engineer.toml) - Infrastructure security specialist
-- [**sre-engineer**](categories/03-infrastructure/sre-engineer.toml) - Site reliability engineering expert
-- [**terraform-engineer**](categories/03-infrastructure/terraform-engineer.toml) - Infrastructure as Code expert
-- [**terragrunt-expert**](categories/03-infrastructure/terragrunt-expert.toml) - Terragrunt orchestration and DRY IaC specialist
-- [**windows-infra-admin**](categories/03-infrastructure/windows-infra-admin.toml) - Active Directory, DNS, DHCP, and GPO automation specialist
+- [**azure-infra-engineer**](skills/azure-infra-engineer/SKILL.md) - Azure infrastructure and Az PowerShell automation expert
+- [**cloud-architect**](skills/cloud-architect/SKILL.md) - AWS/GCP/Azure specialist
+- [**database-administrator**](skills/database-administrator/SKILL.md) - Database management expert
+- [**deployment-engineer**](skills/deployment-engineer/SKILL.md) - Deployment automation specialist
+- [**devops-engineer**](skills/devops-engineer/SKILL.md) - CI/CD and automation expert
+- [**devops-incident-responder**](skills/devops-incident-responder/SKILL.md) - DevOps incident management
+- [**docker-expert**](skills/docker-expert/SKILL.md) - Docker containerization and optimization expert
+- [**incident-responder**](skills/incident-responder/SKILL.md) - System incident response expert
+- [**kubernetes-specialist**](skills/kubernetes-specialist/SKILL.md) - Container orchestration master
+- [**network-engineer**](skills/network-engineer/SKILL.md) - Network infrastructure specialist
+- [**platform-engineer**](skills/platform-engineer/SKILL.md) - Platform architecture expert
+- [**security-engineer**](skills/security-engineer/SKILL.md) - Infrastructure security specialist
+- [**sre-engineer**](skills/sre-engineer/SKILL.md) - Site reliability engineering expert
+- [**terraform-engineer**](skills/terraform-engineer/SKILL.md) - Infrastructure as Code expert
+- [**terragrunt-expert**](skills/terragrunt-expert/SKILL.md) - Terragrunt orchestration and DRY IaC specialist
+- [**windows-infra-admin**](skills/windows-infra-admin/SKILL.md) - Active Directory, DNS, DHCP, and GPO automation specialist
 
 <details>
 <summary><b>04. Quality & Security</b> — Testing, security, and code quality experts (16 agents)</summary>
 
 ### [04. Quality & Security](categories/04-quality-security/)
 
-- [**accessibility-tester**](categories/04-quality-security/accessibility-tester.toml) - A11y compliance expert
-- [**ad-security-reviewer**](categories/04-quality-security/ad-security-reviewer.toml) - Active Directory security and GPO audit specialist
-- [**architect-reviewer**](categories/04-quality-security/architect-reviewer.toml) - Architecture review specialist
-- [**browser-debugger**](categories/04-quality-security/browser-debugger.toml) - Browser-based reproduction and client-side debugging
-- [**chaos-engineer**](categories/04-quality-security/chaos-engineer.toml) - System resilience testing expert
-- [**code-reviewer**](categories/04-quality-security/code-reviewer.toml) - Code quality guardian
-- [**compliance-auditor**](categories/04-quality-security/compliance-auditor.toml) - Regulatory compliance expert
-- [**debugger**](categories/04-quality-security/debugger.toml) - Advanced debugging specialist
-- [**error-detective**](categories/04-quality-security/error-detective.toml) - Error analysis and resolution expert
-- [**penetration-tester**](categories/04-quality-security/penetration-tester.toml) - Ethical hacking specialist
-- [**performance-engineer**](categories/04-quality-security/performance-engineer.toml) - Performance optimization expert
-- [**powershell-security-hardening**](categories/04-quality-security/powershell-security-hardening.toml) - PowerShell security hardening and compliance specialist
-- [**qa-expert**](categories/04-quality-security/qa-expert.toml) - Test automation specialist
-- [**reviewer**](categories/04-quality-security/reviewer.toml) - PR-style review for correctness, security, and regressions
-- [**security-auditor**](categories/04-quality-security/security-auditor.toml) - Security vulnerability expert
-- [**test-automator**](categories/04-quality-security/test-automator.toml) - Test automation framework expert
+- [**accessibility-tester**](skills/accessibility-tester/SKILL.md) - A11y compliance expert
+- [**ad-security-reviewer**](skills/ad-security-reviewer/SKILL.md) - Active Directory security and GPO audit specialist
+- [**architect-reviewer**](skills/architect-reviewer/SKILL.md) - Architecture review specialist
+- [**browser-debugger**](skills/browser-debugger/SKILL.md) - Browser-based reproduction and client-side debugging
+- [**chaos-engineer**](skills/chaos-engineer/SKILL.md) - System resilience testing expert
+- [**code-reviewer**](skills/code-reviewer/SKILL.md) - Code quality guardian
+- [**compliance-auditor**](skills/compliance-auditor/SKILL.md) - Regulatory compliance expert
+- [**debugger**](skills/debugger/SKILL.md) - Advanced debugging specialist
+- [**error-detective**](skills/error-detective/SKILL.md) - Error analysis and resolution expert
+- [**penetration-tester**](skills/penetration-tester/SKILL.md) - Ethical hacking specialist
+- [**performance-engineer**](skills/performance-engineer/SKILL.md) - Performance optimization expert
+- [**powershell-security-hardening**](skills/powershell-security-hardening/SKILL.md) - PowerShell security hardening and compliance specialist
+- [**qa-expert**](skills/qa-expert/SKILL.md) - Test automation specialist
+- [**reviewer**](skills/reviewer/SKILL.md) - PR-style review for correctness, security, and regressions
+- [**security-auditor**](skills/security-auditor/SKILL.md) - Security vulnerability expert
+- [**test-automator**](skills/test-automator/SKILL.md) - Test automation framework expert
 
 </details>
 
@@ -211,18 +171,18 @@ DevOps, cloud, and deployment specialists.
 
 ### [05. Data & AI](categories/05-data-ai/)
 
-- [**ai-engineer**](categories/05-data-ai/ai-engineer.toml) - AI system design and deployment expert
-- [**data-analyst**](categories/05-data-ai/data-analyst.toml) - Data insights and visualization specialist
-- [**data-engineer**](categories/05-data-ai/data-engineer.toml) - Data pipeline architect
-- [**data-scientist**](categories/05-data-ai/data-scientist.toml) - Analytics and insights expert
-- [**database-optimizer**](categories/05-data-ai/database-optimizer.toml) - Database performance specialist
-- [**llm-architect**](categories/05-data-ai/llm-architect.toml) - Large language model architect
-- [**machine-learning-engineer**](categories/05-data-ai/machine-learning-engineer.toml) - Machine learning systems expert
-- [**ml-engineer**](categories/05-data-ai/ml-engineer.toml) - Machine learning specialist
-- [**mlops-engineer**](categories/05-data-ai/mlops-engineer.toml) - MLOps and model deployment expert
-- [**nlp-engineer**](categories/05-data-ai/nlp-engineer.toml) - Natural language processing expert
-- [**postgres-pro**](categories/05-data-ai/postgres-pro.toml) - PostgreSQL database expert
-- [**prompt-engineer**](categories/05-data-ai/prompt-engineer.toml) - Prompt optimization specialist
+- [**ai-engineer**](skills/ai-engineer/SKILL.md) - AI system design and deployment expert
+- [**data-analyst**](skills/data-analyst/SKILL.md) - Data insights and visualization specialist
+- [**data-engineer**](skills/data-engineer/SKILL.md) - Data pipeline architect
+- [**data-scientist**](skills/data-scientist/SKILL.md) - Analytics and insights expert
+- [**database-optimizer**](skills/database-optimizer/SKILL.md) - Database performance specialist
+- [**llm-architect**](skills/llm-architect/SKILL.md) - Large language model architect
+- [**machine-learning-engineer**](skills/machine-learning-engineer/SKILL.md) - Machine learning systems expert
+- [**ml-engineer**](skills/ml-engineer/SKILL.md) - Machine learning specialist
+- [**mlops-engineer**](skills/mlops-engineer/SKILL.md) - MLOps and model deployment expert
+- [**nlp-engineer**](skills/nlp-engineer/SKILL.md) - Natural language processing expert
+- [**postgres-pro**](skills/postgres-pro/SKILL.md) - PostgreSQL database expert
+- [**prompt-engineer**](skills/prompt-engineer/SKILL.md) - Prompt optimization specialist
 
 </details>
 
@@ -231,19 +191,19 @@ DevOps, cloud, and deployment specialists.
 
 ### [06. Developer Experience](categories/06-developer-experience/)
 
-- [**build-engineer**](categories/06-developer-experience/build-engineer.toml) - Build system specialist
-- [**cli-developer**](categories/06-developer-experience/cli-developer.toml) - Command-line tool creator
-- [**dependency-manager**](categories/06-developer-experience/dependency-manager.toml) - Package and dependency specialist
-- [**documentation-engineer**](categories/06-developer-experience/documentation-engineer.toml) - Technical documentation expert
-- [**dx-optimizer**](categories/06-developer-experience/dx-optimizer.toml) - Developer experience optimization specialist
-- [**git-workflow-manager**](categories/06-developer-experience/git-workflow-manager.toml) - Git workflow and branching expert
-- [**legacy-modernizer**](categories/06-developer-experience/legacy-modernizer.toml) - Legacy code modernization specialist
-- [**mcp-developer**](categories/06-developer-experience/mcp-developer.toml) - Model Context Protocol specialist
-- [**powershell-module-architect**](categories/06-developer-experience/powershell-module-architect.toml) - PowerShell module and profile architecture specialist
-- [**powershell-ui-architect**](categories/06-developer-experience/powershell-ui-architect.toml) - PowerShell UI/UX specialist for WinForms, WPF, Metro frameworks, and TUIs
-- [**refactoring-specialist**](categories/06-developer-experience/refactoring-specialist.toml) - Code refactoring expert
-- [**slack-expert**](categories/06-developer-experience/slack-expert.toml) - Slack platform and @slack/bolt specialist
-- [**tooling-engineer**](categories/06-developer-experience/tooling-engineer.toml) - Developer tooling specialist
+- [**build-engineer**](skills/build-engineer/SKILL.md) - Build system specialist
+- [**cli-developer**](skills/cli-developer/SKILL.md) - Command-line tool creator
+- [**dependency-manager**](skills/dependency-manager/SKILL.md) - Package and dependency specialist
+- [**documentation-engineer**](skills/documentation-engineer/SKILL.md) - Technical documentation expert
+- [**dx-optimizer**](skills/dx-optimizer/SKILL.md) - Developer experience optimization specialist
+- [**git-workflow-manager**](skills/git-workflow-manager/SKILL.md) - Git workflow and branching expert
+- [**legacy-modernizer**](skills/legacy-modernizer/SKILL.md) - Legacy code modernization specialist
+- [**mcp-developer**](skills/mcp-developer/SKILL.md) - Model Context Protocol specialist
+- [**powershell-module-architect**](skills/powershell-module-architect/SKILL.md) - PowerShell module and profile architecture specialist
+- [**powershell-ui-architect**](skills/powershell-ui-architect/SKILL.md) - PowerShell UI/UX specialist for WinForms, WPF, Metro frameworks, and TUIs
+- [**refactoring-specialist**](skills/refactoring-specialist/SKILL.md) - Code refactoring expert
+- [**slack-expert**](skills/slack-expert/SKILL.md) - Slack platform and @slack/bolt specialist
+- [**tooling-engineer**](skills/tooling-engineer/SKILL.md) - Developer tooling specialist
 
 </details>
 
@@ -252,18 +212,18 @@ DevOps, cloud, and deployment specialists.
 
 ### [07. Specialized Domains](categories/07-specialized-domains/)
 
-- [**api-documenter**](categories/07-specialized-domains/api-documenter.toml) - API documentation specialist
-- [**blockchain-developer**](categories/07-specialized-domains/blockchain-developer.toml) - Web3 and crypto specialist
-- [**embedded-systems**](categories/07-specialized-domains/embedded-systems.toml) - Embedded and real-time systems expert
-- [**fintech-engineer**](categories/07-specialized-domains/fintech-engineer.toml) - Financial technology specialist
-- [**game-developer**](categories/07-specialized-domains/game-developer.toml) - Game development expert
-- [**iot-engineer**](categories/07-specialized-domains/iot-engineer.toml) - IoT systems developer
-- [**m365-admin**](categories/07-specialized-domains/m365-admin.toml) - Microsoft 365, Exchange Online, Teams, and SharePoint administration specialist
-- [**mobile-app-developer**](categories/07-specialized-domains/mobile-app-developer.toml) - Mobile application specialist
-- [**payment-integration**](categories/07-specialized-domains/payment-integration.toml) - Payment systems expert
-- [**quant-analyst**](categories/07-specialized-domains/quant-analyst.toml) - Quantitative analysis specialist
-- [**risk-manager**](categories/07-specialized-domains/risk-manager.toml) - Risk assessment and management expert
-- [**seo-specialist**](categories/07-specialized-domains/seo-specialist.toml) - Search engine optimization expert
+- [**api-documenter**](skills/api-documenter/SKILL.md) - API documentation specialist
+- [**blockchain-developer**](skills/blockchain-developer/SKILL.md) - Web3 and crypto specialist
+- [**embedded-systems**](skills/embedded-systems/SKILL.md) - Embedded and real-time systems expert
+- [**fintech-engineer**](skills/fintech-engineer/SKILL.md) - Financial technology specialist
+- [**game-developer**](skills/game-developer/SKILL.md) - Game development expert
+- [**iot-engineer**](skills/iot-engineer/SKILL.md) - IoT systems developer
+- [**m365-admin**](skills/m365-admin/SKILL.md) - Microsoft 365, Exchange Online, Teams, and SharePoint administration specialist
+- [**mobile-app-developer**](skills/mobile-app-developer/SKILL.md) - Mobile application specialist
+- [**payment-integration**](skills/payment-integration/SKILL.md) - Payment systems expert
+- [**quant-analyst**](skills/quant-analyst/SKILL.md) - Quantitative analysis specialist
+- [**risk-manager**](skills/risk-manager/SKILL.md) - Risk assessment and management expert
+- [**seo-specialist**](skills/seo-specialist/SKILL.md) - Search engine optimization expert
 
 </details>
 
@@ -272,17 +232,17 @@ DevOps, cloud, and deployment specialists.
 
 ### [08. Business & Product](categories/08-business-product/)
 
-- [**business-analyst**](categories/08-business-product/business-analyst.toml) - Requirements specialist
-- [**content-marketer**](categories/08-business-product/content-marketer.toml) - Content marketing specialist
-- [**customer-success-manager**](categories/08-business-product/customer-success-manager.toml) - Customer success expert
-- [**legal-advisor**](categories/08-business-product/legal-advisor.toml) - Legal and compliance specialist
-- [**product-manager**](categories/08-business-product/product-manager.toml) - Product strategy expert
-- [**project-manager**](categories/08-business-product/project-manager.toml) - Project management specialist
-- [**sales-engineer**](categories/08-business-product/sales-engineer.toml) - Technical sales expert
-- [**scrum-master**](categories/08-business-product/scrum-master.toml) - Agile methodology expert
-- [**technical-writer**](categories/08-business-product/technical-writer.toml) - Technical documentation specialist
-- [**ux-researcher**](categories/08-business-product/ux-researcher.toml) - User research expert
-- [**wordpress-master**](categories/08-business-product/wordpress-master.toml) - WordPress development and optimization expert
+- [**business-analyst**](skills/business-analyst/SKILL.md) - Requirements specialist
+- [**content-marketer**](skills/content-marketer/SKILL.md) - Content marketing specialist
+- [**customer-success-manager**](skills/customer-success-manager/SKILL.md) - Customer success expert
+- [**legal-advisor**](skills/legal-advisor/SKILL.md) - Legal and compliance specialist
+- [**product-manager**](skills/product-manager/SKILL.md) - Product strategy expert
+- [**project-manager**](skills/project-manager/SKILL.md) - Project management specialist
+- [**sales-engineer**](skills/sales-engineer/SKILL.md) - Technical sales expert
+- [**scrum-master**](skills/scrum-master/SKILL.md) - Agile methodology expert
+- [**technical-writer**](skills/technical-writer/SKILL.md) - Technical documentation specialist
+- [**ux-researcher**](skills/ux-researcher/SKILL.md) - User research expert
+- [**wordpress-master**](skills/wordpress-master/SKILL.md) - WordPress development and optimization expert
 
 </details>
 
@@ -291,17 +251,17 @@ DevOps, cloud, and deployment specialists.
 
 ### [09. Meta & Orchestration](categories/09-meta-orchestration/)
 
-- [**agent-installer**](categories/09-meta-orchestration/agent-installer.toml) - Browse and install agents from this repository via GitHub
-- [**agent-organizer**](categories/09-meta-orchestration/agent-organizer.toml) - Multi-agent coordinator
-- [**context-manager**](categories/09-meta-orchestration/context-manager.toml) - Context optimization expert
-- [**error-coordinator**](categories/09-meta-orchestration/error-coordinator.toml) - Error handling and recovery specialist
-- [**it-ops-orchestrator**](categories/09-meta-orchestration/it-ops-orchestrator.toml) - IT operations workflow orchestration specialist
-- [**knowledge-synthesizer**](categories/09-meta-orchestration/knowledge-synthesizer.toml) - Knowledge aggregation expert
-- [**multi-agent-coordinator**](categories/09-meta-orchestration/multi-agent-coordinator.toml) - Advanced multi-agent orchestration
-- [**performance-monitor**](categories/09-meta-orchestration/performance-monitor.toml) - Agent performance optimization
+- [**agent-installer**](skills/agent-installer/SKILL.md) - Browse and install agents from this repository via GitHub
+- [**agent-organizer**](skills/agent-organizer/SKILL.md) - Multi-agent coordinator
+- [**context-manager**](skills/context-manager/SKILL.md) - Context optimization expert
+- [**error-coordinator**](skills/error-coordinator/SKILL.md) - Error handling and recovery specialist
+- [**it-ops-orchestrator**](skills/it-ops-orchestrator/SKILL.md) - IT operations workflow orchestration specialist
+- [**knowledge-synthesizer**](skills/knowledge-synthesizer/SKILL.md) - Knowledge aggregation expert
+- [**multi-agent-coordinator**](skills/multi-agent-coordinator/SKILL.md) - Advanced multi-agent orchestration
+- [**performance-monitor**](skills/performance-monitor/SKILL.md) - Agent performance optimization
 - [**pied-piper**](https://github.com/sathish316/pied-piper/) - Orchestrate Team of AI Subagents for repetitive SDLC workflows
-- [**task-distributor**](categories/09-meta-orchestration/task-distributor.toml) - Task allocation specialist
-- [**workflow-orchestrator**](categories/09-meta-orchestration/workflow-orchestrator.toml) - Complex workflow automation
+- [**task-distributor**](skills/task-distributor/SKILL.md) - Task allocation specialist
+- [**workflow-orchestrator**](skills/workflow-orchestrator/SKILL.md) - Complex workflow automation
 
 </details>
 
@@ -310,13 +270,13 @@ DevOps, cloud, and deployment specialists.
 
 ### [10. Research & Analysis](categories/10-research-analysis/)
 
-- [**competitive-analyst**](categories/10-research-analysis/competitive-analyst.toml) - Competitive intelligence specialist
-- [**data-researcher**](categories/10-research-analysis/data-researcher.toml) - Data discovery and analysis expert
-- [**docs-researcher**](categories/10-research-analysis/docs-researcher.toml) - Documentation-backed API and framework verification
-- [**market-researcher**](categories/10-research-analysis/market-researcher.toml) - Market analysis and consumer insights
-- [**research-analyst**](categories/10-research-analysis/research-analyst.toml) - Comprehensive research specialist
-- [**search-specialist**](categories/10-research-analysis/search-specialist.toml) - Advanced information retrieval expert
-- [**trend-analyst**](categories/10-research-analysis/trend-analyst.toml) - Emerging trends and forecasting expert
+- [**competitive-analyst**](skills/competitive-analyst/SKILL.md) - Competitive intelligence specialist
+- [**data-researcher**](skills/data-researcher/SKILL.md) - Data discovery and analysis expert
+- [**docs-researcher**](skills/docs-researcher/SKILL.md) - Documentation-backed API and framework verification
+- [**market-researcher**](skills/market-researcher/SKILL.md) - Market analysis and consumer insights
+- [**research-analyst**](skills/research-analyst/SKILL.md) - Comprehensive research specialist
+- [**search-specialist**](skills/search-specialist/SKILL.md) - Advanced information retrieval expert
+- [**trend-analyst**](skills/trend-analyst/SKILL.md) - Emerging trends and forecasting expert
 
 </details>
 
