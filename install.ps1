@@ -11,7 +11,7 @@ if (-not (Test-Path $TmpDir)) {
 }
 
 Write-Host "📥 Downloading skills pack..."
-$Url = "https://github.com/jshsakura/awesome-opencode-subagents/archive/refs/heads/main.zip"
+$Url = "https://github.com/jshsakura/awesome-opencode-skills/archive/refs/heads/main.zip"
 Invoke-WebRequest -Uri $Url -OutFile $ZipFile
 
 Write-Host "📦 Extracting files..."
@@ -22,7 +22,7 @@ if (-not (Test-Path $InstallDir)) {
     New-Item -ItemType Directory -Path $InstallDir | Out-Null
 }
 
-Copy-Item -Path "$TmpDir\awesome-opencode-subagents-main\skills\*" -Destination $InstallDir -Recurse -Force
+Copy-Item -Path "$TmpDir\awesome-opencode-skills-main\skills\*" -Destination $InstallDir -Recurse -Force
 
 Write-Host "🧹 Cleaning up..."
 Remove-Item -Path $TmpDir -Recurse -Force

@@ -43,7 +43,7 @@ It takes the 136+ highly specialized Codex `.toml` subagents and translates them
 
 
 
-> **Note:** This repository ([jshsakura/awesome-opencode-subagents](https://github.com/jshsakura/awesome-opencode-subagents)) is an automatically synchronized port of the original [VoltAgent/awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents). All core subagents and credit belong to the original authors. This project simply adapts the 136+ subagents into the **OpenCode Skills** format (`SKILL.md`) for seamless use in OpenCode.
+> **Note:** This repository ([jshsakura/awesome-opencode-skills](https://github.com/jshsakura/awesome-opencode-skills)) is an automatically synchronized port of the original [VoltAgent/awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents). All core subagents and credit belong to the original authors. This project simply adapts the 136+ subagents into the **OpenCode Skills** format (`SKILL.md`) for seamless use in OpenCode.
 
 
 This repository serves as the definitive collection of [Codex Subagents](https://developers.openai.com/codex/subagents), specialized AI assistants designed for specific development tasks. Written specifically for Codex and aligned with the official docs.
@@ -55,12 +55,12 @@ OpenCode loads skills automatically from specific directories on your machine. Y
 
 **Windows (PowerShell)**:
 ```powershell
-irm https://raw.githubusercontent.com/jshsakura/awesome-opencode-subagents/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/jshsakura/awesome-opencode-skills/main/install.ps1 | iex
 ```
 
 **macOS / Linux**:
 ```bash
-curl -sL https://raw.githubusercontent.com/jshsakura/awesome-opencode-subagents/main/install.sh | bash
+curl -sL https://raw.githubusercontent.com/jshsakura/awesome-opencode-skills/main/install.sh | bash
 ```
 
 **Alternative (Python)**:
@@ -125,7 +125,7 @@ Use search_specialist to locate the code related to payment retries, knowledge_s
 
 ⚠️ **Please DO NOT submit new agents or logic changes PRs to this repository!** ⚠️
 
-This repository (`awesome-opencode-subagents`) is strictly for automated porting and packaging for OpenCode. 
+This repository (`awesome-opencode-skills`) is strictly for automated porting and packaging for OpenCode. 
 If you want to contribute new agents, improve definitions, or report logic bugs, please submit your PRs directly to the original repository:
 👉 [VoltAgent/awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents)
 
