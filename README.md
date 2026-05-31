@@ -107,6 +107,8 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**dotnet-framework-4.8-expert**](skills/dotnet-framework-4.8-expert/SKILL.md) | Use when a task needs .NET Framework 4.8 expertise for legacy enterprise applications, compatibility constraints, or Windows-bound integrations. |
 | [**elixir-expert**](skills/elixir-expert/SKILL.md) | Use when a task needs Elixir and OTP expertise for processes, supervision, fault tolerance, or Phoenix application behavior. |
 | [**erlang-expert**](skills/erlang-expert/SKILL.md) | Use when a task needs Erlang/OTP and rebar3 expertise for BEAM processes, testing, releases, upgrades, or distributed runtime behavior. |
+| [**expo-react-native-expert**](skills/expo-react-native-expert/SKILL.md) | Use when a task needs Expo / React Native mobile work — navigation, native modules, performance, EAS builds, or store deployment. |
+| [**fastapi-developer**](skills/fastapi-developer/SKILL.md) | Use when a task needs FastAPI implementation — async endpoints, Pydantic v2 contracts, dependency injection, or ASGI deployment behavior. |
 | [**flutter-expert**](skills/flutter-expert/SKILL.md) | Use when a task needs Flutter expertise for widget behavior, state management, rendering issues, or mobile cross-platform implementation. |
 | [**golang-pro**](skills/golang-pro/SKILL.md) | Use when a task needs Go expertise for concurrency, service implementation, interfaces, tooling, or performance-sensitive backend paths. |
 | [**java-architect**](skills/java-architect/SKILL.md) | Use when a task needs Java application or service architecture help across framework boundaries, JVM behavior, or large codebase structure. |
@@ -114,6 +116,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**kotlin-specialist**](skills/kotlin-specialist/SKILL.md) | Use when a task needs Kotlin expertise for JVM applications, Android code, coroutines, or modern strongly typed service logic. |
 | [**laravel-specialist**](skills/laravel-specialist/SKILL.md) | Use when a task needs Laravel-specific work across routing, Eloquent, queues, validation, or application structure. |
 | [**nextjs-developer**](skills/nextjs-developer/SKILL.md) | Use when a task needs Next.js-specific work across routing, rendering modes, server actions, data fetching, or deployment-sensitive frontend behavior. |
+| [**node-specialist**](skills/node-specialist/SKILL.md) | Use when a task needs Node.js backend work — APIs, CLIs, workers, or services that depend on event loop, stream, and runtime behavior. |
 | [**php-pro**](skills/php-pro/SKILL.md) | Use when a task needs PHP expertise for application logic, framework integration, runtime debugging, or server-side code evolution. |
 | [**powershell-5.1-expert**](skills/powershell-5.1-expert/SKILL.md) | Use when a task needs Windows PowerShell 5.1 expertise for legacy automation, full .NET Framework interop, or Windows administration scripts. |
 | [**powershell-7-expert**](skills/powershell-7-expert/SKILL.md) | Use when a task needs modern PowerShell 7 expertise for cross-platform automation, scripting, or .NET-based operational tooling. |
@@ -124,6 +127,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**spring-boot-engineer**](skills/spring-boot-engineer/SKILL.md) | Use when a task needs Spring Boot expertise for service behavior, configuration, data access, or enterprise API implementation. |
 | [**sql-pro**](skills/sql-pro/SKILL.md) | Use when a task needs SQL query design, query review, schema-aware debugging, or database migration analysis. |
 | [**swift-expert**](skills/swift-expert/SKILL.md) | Use when a task needs Swift expertise for iOS or macOS code, async flows, Apple platform APIs, or strongly typed application logic. |
+| [**symfony-specialist**](skills/symfony-specialist/SKILL.md) | Use when a task needs Symfony-specific work across routing, controllers, services, Doctrine, security, and application structure. |
 | [**typescript-pro**](skills/typescript-pro/SKILL.md) | Use when a task needs strong TypeScript help for types, interfaces, refactors, or compiler-driven fixes. |
 | [**vue-expert**](skills/vue-expert/SKILL.md) | Use when a task needs Vue expertise for component behavior, Composition API patterns, routing, or state and rendering issues. |
 
@@ -154,6 +158,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 |-------|-------------|
 | [**accessibility-tester**](skills/accessibility-tester/SKILL.md) | Use when a task needs an accessibility audit of UI changes, interaction flows, or component behavior. |
 | [**ad-security-reviewer**](skills/ad-security-reviewer/SKILL.md) | Use when a task needs Active Directory security review across identity boundaries, delegation, GPO exposure, or directory hardening. |
+| [**ai-writing-auditor**](skills/ai-writing-auditor/SKILL.md) | Use when a task needs prose to be checked for AI writing patterns and rewritten to sound natural and human. |
 | [**architect-reviewer**](skills/architect-reviewer/SKILL.md) | Use when a task needs architectural review for coupling, system boundaries, long-term maintainability, or design coherence. |
 | [**browser-debugger**](skills/browser-debugger/SKILL.md) | Use when a task needs browser-based reproduction, UI evidence gathering, or client-side debugging through a browser MCP server. |
 | [**chaos-engineer**](skills/chaos-engineer/SKILL.md) | Use when a task needs resilience analysis for dependency failure, degraded modes, recovery behavior, or controlled fault-injection planning. |
@@ -161,6 +166,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**compliance-auditor**](skills/compliance-auditor/SKILL.md) | Use when a task needs compliance-oriented review of controls, auditability, policy alignment, or evidence gaps in a regulated workflow. |
 | [**debugger**](skills/debugger/SKILL.md) | Use when a task needs deep bug isolation across code paths, stack traces, runtime behavior, or failing tests. |
 | [**error-detective**](skills/error-detective/SKILL.md) | Use when a task needs log, exception, or stack-trace analysis to identify the most probable failure source quickly. |
+| [**gdpr-ccpa-compliance**](skills/gdpr-ccpa-compliance/SKILL.md) | Use when a task needs GDPR or CCPA/CPRA compliance review of data practices, consent flows, or data-subject rights handling. |
 | [**penetration-tester**](skills/penetration-tester/SKILL.md) | Use when a task needs adversarial review of an application path for exploitability, abuse cases, or practical attack surface analysis. |
 | [**performance-engineer**](skills/performance-engineer/SKILL.md) | Use when a task needs performance investigation for slow requests, hot paths, rendering regressions, or scalability bottlenecks. |
 | [**powershell-security-hardening**](skills/powershell-security-hardening/SKILL.md) | Use when a task needs PowerShell-focused hardening across script safety, admin automation, execution controls, or Windows security posture. |
@@ -168,6 +174,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**reviewer**](skills/reviewer/SKILL.md) | Use when a task needs PR-style review focused on correctness, security, behavior regressions, and missing tests. |
 | [**security-auditor**](skills/security-auditor/SKILL.md) | Use when a task needs focused security review of code, auth flows, secrets handling, input validation, or infrastructure configuration. |
 | [**test-automator**](skills/test-automator/SKILL.md) | Use when a task needs implementation of automated tests, test harness improvements, or targeted regression coverage. |
+| [**ui-ux-tester**](skills/ui-ux-tester/SKILL.md) | Use when a task needs exhaustive UI and UX functional testing driven by documented user flows, with structured defect reporting. |
 
 ### 05. Data Ai
 
@@ -185,6 +192,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**nlp-engineer**](skills/nlp-engineer/SKILL.md) | Use when a task needs NLP-specific implementation or analysis involving text processing, embeddings, ranking, or language-model-adjacent pipelines. |
 | [**postgres-pro**](skills/postgres-pro/SKILL.md) | Use when a task needs PostgreSQL-specific expertise for schema design, performance behavior, locking, or operational database features. |
 | [**prompt-engineer**](skills/prompt-engineer/SKILL.md) | Use when a task needs prompt revision, instruction design, eval-oriented prompt comparison, or prompt-output contract tightening. |
+| [**reinforcement-learning-engineer**](skills/reinforcement-learning-engineer/SKILL.md) | Use when a task needs RL environment design, policy training, reward engineering, or deployment of decision-making agents. |
 
 ### 06. Developer Experience
 
@@ -200,9 +208,11 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**mcp-developer**](skills/mcp-developer/SKILL.md) | Use when a task needs work on MCP servers, MCP clients, tool wiring, or protocol-aware integrations. |
 | [**powershell-module-architect**](skills/powershell-module-architect/SKILL.md) | Use when a task needs PowerShell module structure, command design, packaging, or profile architecture work. |
 | [**powershell-ui-architect**](skills/powershell-ui-architect/SKILL.md) | Use when a task needs PowerShell-based UI work for terminals, forms, WPF, or admin-oriented interactive tooling. |
+| [**readme-generator**](skills/readme-generator/SKILL.md) | Use when a task needs a maintainer-ready README built from exact repository reality, with zero hallucinated commands, flags, or config keys. |
 | [**refactoring-specialist**](skills/refactoring-specialist/SKILL.md) | Use when a task needs a low-risk structural refactor that preserves behavior while improving readability, modularity, or maintainability. |
 | [**slack-expert**](skills/slack-expert/SKILL.md) | Use when a task needs Slack platform work involving bots, interactivity, events, workflows, or Slack-specific integration behavior. |
 | [**tooling-engineer**](skills/tooling-engineer/SKILL.md) | Use when a task needs internal developer tooling, scripts, automation glue, or workflow support utilities. |
+| [**visual-asset-generator**](skills/visual-asset-generator/SKILL.md) | Use when a project needs production-ready visual assets: app icons, favicons, OG images, logos, or wordmarks. Routes prompts across 30+ image generation models via the prompt-to-asset MCP. Zero API key required for first run via free tiers. |
 
 ### 07. Specialized Domains
 
@@ -213,6 +223,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**embedded-systems**](skills/embedded-systems/SKILL.md) | Use when a task needs embedded or hardware-adjacent work involving device constraints, firmware boundaries, timing, or low-level integration. |
 | [**fintech-engineer**](skills/fintech-engineer/SKILL.md) | Use when a task needs financial systems engineering across ledgers, reconciliation, transfers, settlement, or compliance-sensitive transactional flows. |
 | [**game-developer**](skills/game-developer/SKILL.md) | Use when a task needs game-specific implementation or debugging involving gameplay systems, rendering loops, asset flow, or player-state behavior. |
+| [**hipaa-compliance**](skills/hipaa-compliance/SKILL.md) | Use when a task needs HIPAA compliance review for a healthcare product — Business Associate scope, BAA needs, PHI handling, safeguards, or breach response. |
 | [**iot-engineer**](skills/iot-engineer/SKILL.md) | Use when a task needs IoT system work involving devices, telemetry, edge communication, or cloud-device coordination. |
 | [**m365-admin**](skills/m365-admin/SKILL.md) | Use when a task needs Microsoft 365 administration help across Exchange Online, Teams, SharePoint, identity, or tenant-level automation. |
 | [**mobile-app-developer**](skills/mobile-app-developer/SKILL.md) | Use when a task needs app-level mobile product work across screens, state, API integration, and release-sensitive mobile behavior. |
@@ -225,10 +236,15 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 
 | Skill | Description |
 |-------|-------------|
+| [**assumption-mapping**](skills/assumption-mapping/SKILL.md) | Use when a task needs to surface and prioritize risky assumptions in a product idea, feature, or strategy before engineering invests in building it. |
+| [**backlog-grooming**](skills/backlog-grooming/SKILL.md) | Use when a task needs a product backlog groomed, refined, or cleaned up — sprint readiness, estimation, and zombie-story cleanup. |
 | [**business-analyst**](skills/business-analyst/SKILL.md) | Use when a task needs requirements clarified, scope normalized, or acceptance criteria extracted from messy inputs before engineering work starts. |
 | [**content-marketer**](skills/content-marketer/SKILL.md) | Use when a task needs product-adjacent content strategy or messaging that still has to stay grounded in real technical capabilities. |
+| [**content-quality-editor**](skills/content-quality-editor/SKILL.md) | Use before publishing AI-generated content — blog posts, READMEs, release notes, commit messages, PR descriptions, docs, or social posts. Strips AI patterns and applies a final quality pass. |
 | [**customer-success-manager**](skills/customer-success-manager/SKILL.md) | Use when a task needs support-pattern synthesis, adoption risk analysis, or customer-facing operational guidance from engineering context. |
+| [**growth-loops**](skills/growth-loops/SKILL.md) | Use when a task needs growth loop design, PLG mechanics analysis, or diagnosis of why acquisition is linear instead of compounding. |
 | [**legal-advisor**](skills/legal-advisor/SKILL.md) | Use when a task needs legal-risk spotting in product or engineering behavior, especially around terms, data handling, or externally visible commitments. |
+| [**license-engineer**](skills/license-engineer/SKILL.md) | Use when a task needs software licensing architecture — OSI selection, dependency compliance, dual-licensing, or risk and liability strategy. |
 | [**product-manager**](skills/product-manager/SKILL.md) | Use when a task needs product framing, prioritization, or feature-shaping based on engineering reality and user impact. |
 | [**project-manager**](skills/project-manager/SKILL.md) | Use when a task needs dependency mapping, milestone planning, sequencing, or delivery-risk coordination across multiple workstreams. |
 | [**sales-engineer**](skills/sales-engineer/SKILL.md) | Use when a task needs technically accurate solution positioning, customer-question handling, or implementation tradeoff explanation for pre-sales contexts. |
@@ -243,6 +259,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 |-------|-------------|
 | [**agent-installer**](skills/agent-installer/SKILL.md) | Use when a task needs help selecting, copying, or organizing custom agent files from this repository into Codex agent directories. |
 | [**agent-organizer**](skills/agent-organizer/SKILL.md) | Use when the parent agent needs help choosing subagents and dividing a larger task into clean delegated threads. |
+| [**codebase-orchestrator**](skills/codebase-orchestrator/SKILL.md) | Use when a task needs repository-wide refactor governance with weighted risk prioritization, diff previews, and explicit approval gates before execution. |
 | [**context-manager**](skills/context-manager/SKILL.md) | Use when a task needs a compact project context summary that other subagents can rely on before deeper work begins. |
 | [**error-coordinator**](skills/error-coordinator/SKILL.md) | Use when multiple errors or symptoms need to be grouped, prioritized, and assigned to the right debugging or review agents. |
 | [**it-ops-orchestrator**](skills/it-ops-orchestrator/SKILL.md) | Use when a task needs coordinated operational planning across infrastructure, incident response, identity, endpoint, and admin workflows. |
@@ -260,9 +277,38 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**data-researcher**](skills/data-researcher/SKILL.md) | Use when a task needs source gathering and synthesis around datasets, metrics, data pipelines, or evidence-backed quantitative questions. |
 | [**docs-researcher**](skills/docs-researcher/SKILL.md) | Use when a task needs documentation-backed verification of APIs, version-specific behavior, or framework options. |
 | [**market-researcher**](skills/market-researcher/SKILL.md) | Use when a task needs market landscape, positioning, or demand-side research tied to a technical product or category. |
+| [**project-idea-validator**](skills/project-idea-validator/SKILL.md) | Use when a task needs an idea pressure-tested with brutal honesty — competitor teardown, market validation, fatal-flaw hunting, and clear go or no-go guidance before building. |
 | [**research-analyst**](skills/research-analyst/SKILL.md) | Use when a task needs a structured investigation of a technical topic, implementation approach, or design question. |
+| [**scientific-literature-researcher**](skills/scientific-literature-researcher/SKILL.md) | Use when a task needs evidence-grounded answers from published research, including methods, results, sample sizes, and quality-weighted synthesis. |
 | [**search-specialist**](skills/search-specialist/SKILL.md) | Use when a task needs fast, high-signal searching of the codebase or external sources before deeper analysis begins. |
 | [**trend-analyst**](skills/trend-analyst/SKILL.md) | Use when a task needs trend synthesis across technology shifts, adoption patterns, or emerging implementation directions. |
+
+### 11. Ai Governance Safety
+
+| Skill | Description |
+|-------|-------------|
+| [**ai-governance-auditor**](skills/ai-governance-auditor/SKILL.md) | Use when a task needs an AI governance review covering controls, accountability, risk ownership, and deployment readiness. |
+| [**model-risk-manager**](skills/model-risk-manager/SKILL.md) | Use when a task needs model risk analysis, failure mode prioritization, and mitigation planning for AI behavior. |
+| [**policy-guardrail-designer**](skills/policy-guardrail-designer/SKILL.md) | Use when a task needs enforceable prompt, tool, workflow, or approval guardrails for AI systems. |
+| [**responsible-ai-reviewer**](skills/responsible-ai-reviewer/SKILL.md) | Use when a task needs review of fairness, transparency, misuse risk, and human-oversight design in AI features. |
+
+### 12. Platform Engineering Idp
+
+| Skill | Description |
+|-------|-------------|
+| [**backstage-specialist**](skills/backstage-specialist/SKILL.md) | Use when a task needs Backstage architecture, catalog, plugin, template, or adoption guidance for an internal developer platform. |
+| [**golden-path-designer**](skills/golden-path-designer/SKILL.md) | Use when a task needs an opinionated, low-friction golden path for service creation, deployment, or operations. |
+| [**idp-architect**](skills/idp-architect/SKILL.md) | Use when a task needs internal developer platform architecture, service boundaries, and self-service control-plane design. |
+| [**platform-product-manager**](skills/platform-product-manager/SKILL.md) | Use when a task needs platform roadmap, adoption strategy, success metrics, and stakeholder alignment for internal platform work. |
+
+### 13. Llmops Evals Observability
+
+| Skill | Description |
+|-------|-------------|
+| [**ai-observability-engineer**](skills/ai-observability-engineer/SKILL.md) | Use when a task needs AI-native traces, metrics, logging, and debugging signals for LLM or agent systems in production. |
+| [**eval-engineer**](skills/eval-engineer/SKILL.md) | Use when a task needs evaluation design for prompts, retrieval, tools, or multi-step agent workflows. |
+| [**hallucination-investigator**](skills/hallucination-investigator/SKILL.md) | Use when a task needs root-cause analysis for factuality failures, unsupported claims, or context breakdowns in AI outputs. |
+| [**prompt-regression-tester**](skills/prompt-regression-tester/SKILL.md) | Use when a task needs regression coverage for prompt, model, tool, or workflow changes in an AI system. |
 
 <!-- END_SKILLS_TABLE -->
 
