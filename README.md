@@ -85,6 +85,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**api-designer**](skills/api-designer/SKILL.md) | Use when a task needs API contract design, evolution planning, or compatibility review before implementation starts. |
 | [**backend-developer**](skills/backend-developer/SKILL.md) | Use when a task needs scoped backend implementation or backend bug fixes after the owning path is known. |
 | [**code-mapper**](skills/code-mapper/SKILL.md) | Use when the parent agent needs a high-confidence map of code paths, ownership boundaries, and execution flow before changes are made. |
+| [**design-bridge**](skills/design-bridge/SKILL.md) | Use when a task needs a DESIGN.md (e.g. from the VoltAgent/awesome-design-md collection) translated into precise, implementation-ready UI instructions that faithfully match a target brand. |
 | [**electron-pro**](skills/electron-pro/SKILL.md) | Use when a task needs Electron-specific implementation or debugging across main/renderer/preload boundaries, packaging, and desktop runtime behavior. |
 | [**frontend-developer**](skills/frontend-developer/SKILL.md) | Use when a task needs scoped frontend implementation or UI bug fixes with production-level behavior and quality. |
 | [**fullstack-developer**](skills/fullstack-developer/SKILL.md) | Use when one bounded feature or bug spans frontend and backend and a single worker should own the entire path. |
@@ -223,6 +224,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**embedded-systems**](skills/embedded-systems/SKILL.md) | Use when a task needs embedded or hardware-adjacent work involving device constraints, firmware boundaries, timing, or low-level integration. |
 | [**fintech-engineer**](skills/fintech-engineer/SKILL.md) | Use when a task needs financial systems engineering across ledgers, reconciliation, transfers, settlement, or compliance-sensitive transactional flows. |
 | [**game-developer**](skills/game-developer/SKILL.md) | Use when a task needs game-specific implementation or debugging involving gameplay systems, rendering loops, asset flow, or player-state behavior. |
+| [**healthcare-admin**](skills/healthcare-admin/SKILL.md) | Use when a task involves healthcare administration: revenue cycle management, HIPAA/compliance auditing, medical coding (ICD-10, CPT, DRGs), CMS cost reports, payer contract analysis, quality improvement, clinical operations, health IT/interoperability, population health, or pharmacy benefits. |
 | [**hipaa-compliance**](skills/hipaa-compliance/SKILL.md) | Use when a task needs HIPAA compliance review for a healthcare product — Business Associate scope, BAA needs, PHI handling, safeguards, or breach response. |
 | [**iot-engineer**](skills/iot-engineer/SKILL.md) | Use when a task needs IoT system work involving devices, telemetry, edge communication, or cloud-device coordination. |
 | [**m365-admin**](skills/m365-admin/SKILL.md) | Use when a task needs Microsoft 365 administration help across Exchange Online, Teams, SharePoint, identity, or tenant-level automation. |
@@ -273,9 +275,12 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 
 | Skill | Description |
 |-------|-------------|
+| [**ab-test-analysis**](skills/ab-test-analysis/SKILL.md) | Use when a task needs analysis of A/B test results, interpretation of p-values and confidence intervals, statistical significance checks, or a principled ship/no-ship decision. |
+| [**cohort-analysis**](skills/cohort-analysis/SKILL.md) | Use when a task needs retention analysis, cohort behavior comparison, activation-metric discovery, or diagnosis of how user groups perform over time. |
 | [**competitive-analyst**](skills/competitive-analyst/SKILL.md) | Use when a task needs a grounded comparison of tools, products, libraries, or implementation options. |
 | [**data-researcher**](skills/data-researcher/SKILL.md) | Use when a task needs source gathering and synthesis around datasets, metrics, data pipelines, or evidence-backed quantitative questions. |
 | [**docs-researcher**](skills/docs-researcher/SKILL.md) | Use when a task needs documentation-backed verification of APIs, version-specific behavior, or framework options. |
+| [**first-principles-thinking**](skills/first-principles-thinking/SKILL.md) | Use when a task needs assumptions challenged, a complex problem broken down to fundamentals, or a solution rebuilt from scratch rather than from convention or analogy. |
 | [**market-researcher**](skills/market-researcher/SKILL.md) | Use when a task needs market landscape, positioning, or demand-side research tied to a technical product or category. |
 | [**project-idea-validator**](skills/project-idea-validator/SKILL.md) | Use when a task needs an idea pressure-tested with brutal honesty — competitor teardown, market validation, fatal-flaw hunting, and clear go or no-go guidance before building. |
 | [**research-analyst**](skills/research-analyst/SKILL.md) | Use when a task needs a structured investigation of a technical topic, implementation approach, or design question. |
