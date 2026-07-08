@@ -2,8 +2,8 @@ name: Sync Upstream Skills
 
 on:
   schedule:
-    # Run at 00:00 every Sunday
-    - cron: '0 0 * * 0'
+    # Run at 00:00 every day
+    - cron: '0 0 * * *'
   workflow_dispatch: # Allow manual triggering
 
 permissions:
