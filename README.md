@@ -6,7 +6,7 @@
 <br />
 
 <div align="center">
-    <strong>The awesome collection of 136+ Codex subagents across 10 categories.</strong>
+    <strong>The awesome collection of 172+ Codex subagents across 13 categories.</strong>
     <br />
     <br />
 </div>
@@ -15,7 +15,7 @@
 <div align="center">
     
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Subagent Count](https://img.shields.io/badge/subagents-136-blue?style=classic)
+![Subagent Count](https://img.shields.io/badge/subagents-172-blue?style=classic)
 [![Last Update](https://img.shields.io/github/last-commit/VoltAgent/awesome-codex-subagents?label=Last%20update&style=classic)](https://github.com/VoltAgent/awesome-codex-subagents)
 [![Discord](https://img.shields.io/discord/1361559153780195478.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://s.voltagent.dev/discord)
 
@@ -39,11 +39,11 @@
 # Awesome OpenCode Skills (Codex Subagents Port)
 
 **This repository is the automated OpenCode-converted version of the original Codex Subagents.**
-It takes the 136+ highly specialized Codex `.toml` subagents and translates them 1:1 into the native OpenCode `SKILL.md` format for seamless integration into your OpenCode workflow.
+It takes the 172+ highly specialized Codex `.toml` subagents and translates them 1:1 into the native OpenCode `SKILL.md` format for seamless integration into your OpenCode workflow.
 
 
 
-> **Note:** This repository ([jshsakura/awesome-opencode-skills](https://github.com/jshsakura/awesome-opencode-skills)) is an automatically synchronized port of the original [VoltAgent/awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents). All core subagents and credit belong to the original authors. This project simply adapts the 136+ subagents into the **OpenCode Skills** format (`SKILL.md`) for seamless use in OpenCode.
+> **Note:** This repository ([jshsakura/awesome-opencode-skills](https://github.com/jshsakura/awesome-opencode-skills)) is an automatically synchronized port of the original [VoltAgent/awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents). All core subagents and credit belong to the original authors. This project simply adapts the 172+ subagents into the **OpenCode Skills** format (`SKILL.md`) for seamless use in OpenCode.
 
 
 This repository serves as the definitive collection of [Codex Subagents](https://developers.openai.com/codex/subagents), specialized AI assistants designed for specific development tasks. Written specifically for Codex and aligned with the official docs.
@@ -51,7 +51,7 @@ This repository serves as the definitive collection of [Codex Subagents](https:/
 
 ## 🚀 Installation & Deployment
 
-OpenCode loads skills automatically from specific directories on your machine. You can install all 136+ skills via a single command:
+OpenCode loads skills automatically from specific directories on your machine. You can install all 172+ skills via a single command:
 
 **Windows (PowerShell)**:
 ```powershell
@@ -153,7 +153,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**terragrunt-expert**](skills/terragrunt-expert/SKILL.md) | Use when a task needs Terragrunt-specific help for module orchestration, environment layering, dependency wiring, or DRY infrastructure structure. |
 | [**windows-infra-admin**](skills/windows-infra-admin/SKILL.md) | Use when a task needs Windows infrastructure administration across Active Directory, DNS, DHCP, GPO, or Windows automation. |
 
-### 04. Quality Security
+### 04. Quality & Security
 
 | Skill | Description |
 |-------|-------------|
@@ -177,7 +177,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**test-automator**](skills/test-automator/SKILL.md) | Use when a task needs implementation of automated tests, test harness improvements, or targeted regression coverage. |
 | [**ui-ux-tester**](skills/ui-ux-tester/SKILL.md) | Use when a task needs exhaustive UI and UX functional testing driven by documented user flows, with structured defect reporting. |
 
-### 05. Data Ai
+### 05. Data & AI
 
 | Skill | Description |
 |-------|-------------|
@@ -234,7 +234,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**risk-manager**](skills/risk-manager/SKILL.md) | Use when a task needs explicit risk analysis for product, operational, financial, or architectural decisions. |
 | [**seo-specialist**](skills/seo-specialist/SKILL.md) | Use when a task needs search-focused technical review across crawlability, metadata, rendering, information architecture, or content discoverability. |
 
-### 08. Business Product
+### 08. Business & Product
 
 | Skill | Description |
 |-------|-------------|
@@ -255,7 +255,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**ux-researcher**](skills/ux-researcher/SKILL.md) | Use when a task needs UI feedback synthesized into actionable product and implementation guidance. |
 | [**wordpress-master**](skills/wordpress-master/SKILL.md) | Use when a task needs WordPress-specific implementation or debugging across themes, plugins, content architecture, or operational site behavior. |
 
-### 09. Meta Orchestration
+### 09. Meta & Orchestration
 
 | Skill | Description |
 |-------|-------------|
@@ -271,7 +271,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**task-distributor**](skills/task-distributor/SKILL.md) | Use when a broad task needs to be broken into concrete sub-tasks with clear boundaries for multiple agents or contributors. |
 | [**workflow-orchestrator**](skills/workflow-orchestrator/SKILL.md) | Use when the parent agent needs an explicit Codex subagent workflow for a complex task with multiple stages. |
 
-### 10. Research Analysis
+### 10. Research & Analysis
 
 | Skill | Description |
 |-------|-------------|
@@ -288,7 +288,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**search-specialist**](skills/search-specialist/SKILL.md) | Use when a task needs fast, high-signal searching of the codebase or external sources before deeper analysis begins. |
 | [**trend-analyst**](skills/trend-analyst/SKILL.md) | Use when a task needs trend synthesis across technology shifts, adoption patterns, or emerging implementation directions. |
 
-### 11. Ai Governance Safety
+### 11. AI Governance & Safety
 
 | Skill | Description |
 |-------|-------------|
@@ -297,7 +297,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**policy-guardrail-designer**](skills/policy-guardrail-designer/SKILL.md) | Use when a task needs enforceable prompt, tool, workflow, or approval guardrails for AI systems. |
 | [**responsible-ai-reviewer**](skills/responsible-ai-reviewer/SKILL.md) | Use when a task needs review of fairness, transparency, misuse risk, and human-oversight design in AI features. |
 
-### 12. Platform Engineering Idp
+### 12. Platform Engineering & IDP
 
 | Skill | Description |
 |-------|-------------|
@@ -306,7 +306,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**idp-architect**](skills/idp-architect/SKILL.md) | Use when a task needs internal developer platform architecture, service boundaries, and self-service control-plane design. |
 | [**platform-product-manager**](skills/platform-product-manager/SKILL.md) | Use when a task needs platform roadmap, adoption strategy, success metrics, and stakeholder alignment for internal platform work. |
 
-### 13. Llmops Evals Observability
+### 13. LLMOps, Evals & Observability
 
 | Skill | Description |
 |-------|-------------|

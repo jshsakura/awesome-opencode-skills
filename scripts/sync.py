@@ -19,6 +19,22 @@ TEMP_DIR = Path(".temp_sync")
 SKILLS_DIR = Path("skills")
 README_PATH = Path("README.md")
 
+CATEGORY_TITLES = {
+    '01-core-development': '01. Core Development',
+    '02-language-specialists': '02. Language Specialists',
+    '03-infrastructure': '03. Infrastructure',
+    '04-quality-security': '04. Quality & Security',
+    '05-data-ai': '05. Data & AI',
+    '06-developer-experience': '06. Developer Experience',
+    '07-specialized-domains': '07. Specialized Domains',
+    '08-business-product': '08. Business & Product',
+    '09-meta-orchestration': '09. Meta & Orchestration',
+    '10-research-analysis': '10. Research & Analysis',
+    '11-ai-governance-safety': '11. AI Governance & Safety',
+    '12-platform-engineering-idp': '12. Platform Engineering & IDP',
+    '13-llmops-evals-observability': '13. LLMOps, Evals & Observability',
+}
+
 def parse_toml_fallback(content):
     data = {}
     for key in ['name', 'description', 'model', 'model_reasoning_effort', 'sandbox_mode']:
@@ -42,12 +58,14 @@ def generate_readme_table(categories_data):
         if cat_name == 'categories':
             continue
             
-        if '-' in cat_name:
-            parts = cat_name.split('-', 1)
-            formatted_cat = f"{parts[0]}. {parts[1].replace('-', ' ').title()}"
-        else:
-            formatted_cat = cat_name.title()
-            
+        formatted_cat = CATEGORY_TITLES.get(cat_name)
+        if not formatted_cat:
+            if '-' in cat_name:
+                parts = cat_name.split('-', 1)
+                formatted_cat = f"{parts[0]}. {parts[1].replace('-', ' ').title()}"
+            else:
+                formatted_cat = cat_name.title()
+
         lines.append(f"### {formatted_cat}")
         lines.append("")
         lines.append("| Skill | Description |")
@@ -62,18 +80,32 @@ def generate_readme_table(categories_data):
         
     return "\n".join(lines)
 
-def update_readme(table_content):
+def update_readme(table_content, skill_count, category_count):
     if not README_PATH.exists():
         return
-        
+
     with open(README_PATH, 'r', encoding='utf-8') as f:
         content = f.read()
-        
+
     pattern = r'(<!-- START_SKILLS_TABLE -->).*?(<!-- END_SKILLS_TABLE -->)'
-    new_content = re.sub(pattern, rf'\1\n{table_content}\n\2', content, flags=re.DOTALL)
-    
+    content = re.sub(pattern, rf'\1\n{table_content}\n\2', content, flags=re.DOTALL)
+
+    count_replacements = [
+        (r'subagents-\d+-blue', f'subagents-{skill_count}-blue'),
+        (r'The awesome collection of \d+\+ Codex subagents across \d+ categories\.',
+         f'The awesome collection of {skill_count}+ Codex subagents across {category_count} categories.'),
+        (r'takes the \d+\+ highly specialized Codex',
+         f'takes the {skill_count}+ highly specialized Codex'),
+        (r'adapts the \d+\+ subagents',
+         f'adapts the {skill_count}+ subagents'),
+        (r'install all \d+\+ skills via a single command',
+         f'install all {skill_count}+ skills via a single command'),
+    ]
+    for pat, repl in count_replacements:
+        content = re.sub(pat, repl, content)
+
     with open(README_PATH, 'w', encoding='utf-8') as f:
-        f.write(new_content)
+        f.write(content)
 
 def sync_skills():
     print("Syncing from upstream: awesome-codex-subagents...")
@@ -171,7 +203,7 @@ def sync_skills():
                 count += 1
                 
     table_content = generate_readme_table(categories_data)
-    update_readme(table_content)
+    update_readme(table_content, count, len(categories_data))
                 
     shutil.rmtree(TEMP_DIR, ignore_errors=True)
     print(f"Successfully synchronized {count} skills and updated README.md.")
