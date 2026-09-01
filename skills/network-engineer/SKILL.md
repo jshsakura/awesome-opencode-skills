@@ -3,7 +3,7 @@ name: network-engineer
 description: "Use when a task needs network-path analysis, service connectivity debugging, load-balancer review, or infrastructure network design input."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

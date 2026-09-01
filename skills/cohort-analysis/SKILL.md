@@ -3,7 +3,7 @@ name: cohort-analysis
 description: "Use when a task needs retention analysis, cohort behavior comparison, activation-metric discovery, or diagnosis of how user groups perform over time."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

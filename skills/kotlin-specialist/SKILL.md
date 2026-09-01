@@ -3,7 +3,7 @@ name: kotlin-specialist
 description: "Use when a task needs Kotlin expertise for JVM applications, Android code, coroutines, or modern strongly typed service logic."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: workspace-write
 ---

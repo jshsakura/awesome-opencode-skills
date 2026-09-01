@@ -3,7 +3,7 @@ name: business-analyst
 description: "Use when a task needs requirements clarified, scope normalized, or acceptance criteria extracted from messy inputs before engineering work starts."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

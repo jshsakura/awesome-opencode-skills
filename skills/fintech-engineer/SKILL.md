@@ -3,7 +3,7 @@ name: fintech-engineer
 description: "Use when a task needs financial systems engineering across ledgers, reconciliation, transfers, settlement, or compliance-sensitive transactional flows."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: workspace-write
 ---

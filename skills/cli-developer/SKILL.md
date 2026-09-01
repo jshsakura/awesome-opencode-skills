@@ -3,7 +3,7 @@ name: cli-developer
 description: "Use when a task needs a command-line interface feature, UX review, argument parsing change, or shell-facing workflow improvement."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: workspace-write
 ---

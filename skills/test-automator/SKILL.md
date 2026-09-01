@@ -3,7 +3,7 @@ name: test-automator
 description: "Use when a task needs implementation of automated tests, test harness improvements, or targeted regression coverage."
 compatibility: opencode
 metadata:
-  model: gpt-5.3-codex-spark
+  model: gpt-5.6-terra
   model_reasoning_effort: medium
   sandbox_mode: workspace-write
 ---

@@ -3,7 +3,7 @@ name: customer-success-manager
 description: "Use when a task needs support-pattern synthesis, adoption risk analysis, or customer-facing operational guidance from engineering context."
 compatibility: opencode
 metadata:
-  model: gpt-5.3-codex-spark
+  model: gpt-5.6-terra
   model_reasoning_effort: medium
   sandbox_mode: read-only
 ---

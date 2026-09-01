@@ -3,7 +3,7 @@ name: powershell-module-architect
 description: "Use when a task needs PowerShell module structure, command design, packaging, or profile architecture work."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: workspace-write
 ---

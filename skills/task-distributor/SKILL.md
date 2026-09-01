@@ -3,7 +3,7 @@ name: task-distributor
 description: "Use when a broad task needs to be broken into concrete sub-tasks with clear boundaries for multiple agents or contributors."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

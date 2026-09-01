@@ -3,7 +3,7 @@ name: backlog-grooming
 description: "Use when a task needs a product backlog groomed, refined, or cleaned up — sprint readiness, estimation, and zombie-story cleanup."
 compatibility: opencode
 metadata:
-  model: gpt-5.3-codex-spark
+  model: gpt-5.6-terra
   model_reasoning_effort: medium
   sandbox_mode: read-only
 ---

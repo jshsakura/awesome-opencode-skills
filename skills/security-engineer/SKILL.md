@@ -3,7 +3,7 @@ name: security-engineer
 description: "Use when a task needs infrastructure and platform security engineering across IAM, secrets, network controls, or hardening work."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

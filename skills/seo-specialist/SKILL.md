@@ -3,7 +3,7 @@ name: seo-specialist
 description: "Use when a task needs search-focused technical review across crawlability, metadata, rendering, information architecture, or content discoverability."
 compatibility: opencode
 metadata:
-  model: gpt-5.3-codex-spark
+  model: gpt-5.6-terra
   model_reasoning_effort: medium
   sandbox_mode: read-only
 ---

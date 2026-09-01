@@ -3,7 +3,7 @@ name: ad-security-reviewer
 description: "Use when a task needs Active Directory security review across identity boundaries, delegation, GPO exposure, or directory hardening."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

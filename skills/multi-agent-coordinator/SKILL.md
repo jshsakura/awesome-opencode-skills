@@ -3,7 +3,7 @@ name: multi-agent-coordinator
 description: "Use when a task needs a concrete multi-agent plan with clear role separation, dependencies, and result integration."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

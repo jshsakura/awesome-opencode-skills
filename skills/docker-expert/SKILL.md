@@ -3,7 +3,7 @@ name: docker-expert
 description: "Use when a task needs Dockerfile review, image optimization, multi-stage build fixes, or container runtime debugging."
 compatibility: opencode
 metadata:
-  model: gpt-5.3-codex-spark
+  model: gpt-5.6-terra
   model_reasoning_effort: medium
   sandbox_mode: workspace-write
 ---

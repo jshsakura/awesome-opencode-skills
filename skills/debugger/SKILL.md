@@ -3,7 +3,7 @@ name: debugger
 description: "Use when a task needs deep bug isolation across code paths, stack traces, runtime behavior, or failing tests."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

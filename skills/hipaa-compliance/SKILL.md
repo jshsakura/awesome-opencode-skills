@@ -3,7 +3,7 @@ name: hipaa-compliance
 description: "Use when a task needs HIPAA compliance review for a healthcare product — Business Associate scope, BAA needs, PHI handling, safeguards, or breach response."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: medium
   sandbox_mode: read-only
 ---

@@ -3,7 +3,7 @@ name: reinforcement-learning-engineer
 description: "Use when a task needs RL environment design, policy training, reward engineering, or deployment of decision-making agents."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: workspace-write
 ---

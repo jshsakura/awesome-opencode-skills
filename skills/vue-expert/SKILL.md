@@ -3,7 +3,7 @@ name: vue-expert
 description: "Use when a task needs Vue expertise for component behavior, Composition API patterns, routing, or state and rendering issues."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: workspace-write
 ---

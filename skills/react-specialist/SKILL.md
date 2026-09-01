@@ -3,7 +3,7 @@ name: react-specialist
 description: "Use when a task needs a React-focused agent for component behavior, state flow, rendering bugs, or modern React patterns."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: workspace-write
 ---

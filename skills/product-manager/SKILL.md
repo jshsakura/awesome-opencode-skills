@@ -3,7 +3,7 @@ name: product-manager
 description: "Use when a task needs product framing, prioritization, or feature-shaping based on engineering reality and user impact."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

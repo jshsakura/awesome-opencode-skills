@@ -3,7 +3,7 @@ name: mobile-app-developer
 description: "Use when a task needs app-level mobile product work across screens, state, API integration, and release-sensitive mobile behavior."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: workspace-write
 ---

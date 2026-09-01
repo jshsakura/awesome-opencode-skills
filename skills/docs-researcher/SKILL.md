@@ -3,7 +3,7 @@ name: docs-researcher
 description: "Use when a task needs documentation-backed verification of APIs, version-specific behavior, or framework options."
 compatibility: opencode
 metadata:
-  model: gpt-5.3-codex-spark
+  model: gpt-5.6-luna
   model_reasoning_effort: medium
   sandbox_mode: read-only
 ---

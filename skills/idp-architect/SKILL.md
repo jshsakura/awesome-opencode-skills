@@ -3,7 +3,7 @@ name: idp-architect
 description: "Use when a task needs internal developer platform architecture, service boundaries, and self-service control-plane design."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

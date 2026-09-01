@@ -3,7 +3,7 @@ name: scientific-literature-researcher
 description: "Use when a task needs evidence-grounded answers from published research, including methods, results, sample sizes, and quality-weighted synthesis."
 compatibility: opencode
 metadata:
-  model: gpt-5.3-codex-spark
+  model: gpt-5.6-terra
   model_reasoning_effort: medium
   sandbox_mode: read-only
 ---

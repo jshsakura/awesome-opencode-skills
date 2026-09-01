@@ -3,7 +3,7 @@ name: ai-governance-auditor
 description: "Use when a task needs an AI governance review covering controls, accountability, risk ownership, and deployment readiness."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

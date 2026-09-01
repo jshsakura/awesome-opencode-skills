@@ -3,7 +3,7 @@ name: prompt-regression-tester
 description: "Use when a task needs regression coverage for prompt, model, tool, or workflow changes in an AI system."
 compatibility: opencode
 metadata:
-  model: gpt-5.3-codex-spark
+  model: gpt-5.6-terra
   model_reasoning_effort: medium
   sandbox_mode: read-only
 ---

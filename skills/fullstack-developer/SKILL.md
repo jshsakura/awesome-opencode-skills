@@ -3,7 +3,7 @@ name: fullstack-developer
 description: "Use when one bounded feature or bug spans frontend and backend and a single worker should own the entire path."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: workspace-write
 ---

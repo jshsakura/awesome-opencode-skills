@@ -3,7 +3,7 @@ name: workflow-orchestrator
 description: "Use when the parent agent needs an explicit Codex subagent workflow for a complex task with multiple stages."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

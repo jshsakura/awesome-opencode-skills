@@ -3,7 +3,7 @@ name: search-specialist
 description: "Use when a task needs fast, high-signal searching of the codebase or external sources before deeper analysis begins."
 compatibility: opencode
 metadata:
-  model: gpt-5.3-codex-spark
+  model: gpt-5.6-luna
   model_reasoning_effort: medium
   sandbox_mode: read-only
 ---

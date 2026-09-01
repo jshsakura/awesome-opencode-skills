@@ -6,7 +6,7 @@
 <br />
 
 <div align="center">
-    <strong>The awesome collection of 172+ Codex subagents across 13 categories.</strong>
+    <strong>The awesome collection of 174+ Codex subagents across 13 categories.</strong>
     <br />
     <br />
 </div>
@@ -15,7 +15,7 @@
 <div align="center">
     
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Subagent Count](https://img.shields.io/badge/subagents-172-blue?style=classic)
+![Subagent Count](https://img.shields.io/badge/subagents-174-blue?style=classic)
 [![Last Update](https://img.shields.io/github/last-commit/VoltAgent/awesome-codex-subagents?label=Last%20update&style=classic)](https://github.com/VoltAgent/awesome-codex-subagents)
 [![Discord](https://img.shields.io/discord/1361559153780195478.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://s.voltagent.dev/discord)
 
@@ -39,11 +39,11 @@
 # Awesome OpenCode Skills (Codex Subagents Port)
 
 **This repository is the automated OpenCode-converted version of the original Codex Subagents.**
-It takes the 172+ highly specialized Codex `.toml` subagents and translates them 1:1 into the native OpenCode `SKILL.md` format for seamless integration into your OpenCode workflow.
+It takes the 174+ highly specialized Codex `.toml` subagents and translates them 1:1 into the native OpenCode `SKILL.md` format for seamless integration into your OpenCode workflow.
 
 
 
-> **Note:** This repository ([jshsakura/awesome-opencode-skills](https://github.com/jshsakura/awesome-opencode-skills)) is an automatically synchronized port of the original [VoltAgent/awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents). All core subagents and credit belong to the original authors. This project simply adapts the 172+ subagents into the **OpenCode Skills** format (`SKILL.md`) for seamless use in OpenCode.
+> **Note:** This repository ([jshsakura/awesome-opencode-skills](https://github.com/jshsakura/awesome-opencode-skills)) is an automatically synchronized port of the original [VoltAgent/awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents). All core subagents and credit belong to the original authors. This project simply adapts the 174+ subagents into the **OpenCode Skills** format (`SKILL.md`) for seamless use in OpenCode.
 
 
 This repository serves as the definitive collection of [Codex Subagents](https://developers.openai.com/codex/subagents), specialized AI assistants designed for specific development tasks. Written specifically for Codex and aligned with the official docs.
@@ -51,7 +51,7 @@ This repository serves as the definitive collection of [Codex Subagents](https:/
 
 ## 🚀 Installation & Deployment
 
-OpenCode loads skills automatically from specific directories on your machine. You can install all 172+ skills via a single command:
+OpenCode loads skills automatically from specific directories on your machine. You can install all 174+ skills via a single command:
 
 **Windows (PowerShell)**:
 ```powershell
@@ -182,6 +182,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | Skill | Description |
 |-------|-------------|
 | [**ai-engineer**](skills/ai-engineer/SKILL.md) | Use when a task needs implementation or debugging of model-backed application features, agent flows, or evaluation hooks. |
+| [**azure-databricks-platform-architect**](skills/azure-databricks-platform-architect/SKILL.md) | Use when a task needs end-to-end Azure Databricks platform architecture across lakehouse design, governance, compute, security, networking, reliability, and cost. |
 | [**data-analyst**](skills/data-analyst/SKILL.md) | Use when a task needs data interpretation, metric breakdown, trend explanation, or decision support from existing analytics outputs. |
 | [**data-engineer**](skills/data-engineer/SKILL.md) | Use when a task needs ETL, ingestion, transformation, warehouse, or data-pipeline implementation and debugging. |
 | [**data-scientist**](skills/data-scientist/SKILL.md) | Use when a task needs statistical reasoning, experiment interpretation, feature analysis, or model-oriented data exploration. |
@@ -249,6 +250,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**license-engineer**](skills/license-engineer/SKILL.md) | Use when a task needs software licensing architecture — OSI selection, dependency compliance, dual-licensing, or risk and liability strategy. |
 | [**product-manager**](skills/product-manager/SKILL.md) | Use when a task needs product framing, prioritization, or feature-shaping based on engineering reality and user impact. |
 | [**project-manager**](skills/project-manager/SKILL.md) | Use when a task needs dependency mapping, milestone planning, sequencing, or delivery-risk coordination across multiple workstreams. |
+| [**resume-refiner**](skills/resume-refiner/SKILL.md) | Use when a task needs a professional resume, CV, or LinkedIn profile reviewed, refined, or optimized for clarity, impact, and role alignment. |
 | [**sales-engineer**](skills/sales-engineer/SKILL.md) | Use when a task needs technically accurate solution positioning, customer-question handling, or implementation tradeoff explanation for pre-sales contexts. |
 | [**scrum-master**](skills/scrum-master/SKILL.md) | Use when a task needs process facilitation, iteration planning, or workflow friction analysis for an engineering team. |
 | [**technical-writer**](skills/technical-writer/SKILL.md) | Use when a task needs release notes, migration notes, onboarding material, or developer-facing prose derived from real code changes. |

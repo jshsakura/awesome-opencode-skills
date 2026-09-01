@@ -3,7 +3,7 @@ name: design-bridge
 description: "Use when a task needs a DESIGN.md (e.g. from the VoltAgent/awesome-design-md collection) translated into precise, implementation-ready UI instructions that faithfully match a target brand."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: workspace-write
 ---

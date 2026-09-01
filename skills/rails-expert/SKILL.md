@@ -3,7 +3,7 @@ name: rails-expert
 description: "Use when a task needs Ruby on Rails expertise for models, controllers, jobs, callbacks, or convention-driven application changes."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: workspace-write
 ---

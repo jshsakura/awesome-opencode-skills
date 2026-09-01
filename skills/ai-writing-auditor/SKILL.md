@@ -3,7 +3,7 @@ name: ai-writing-auditor
 description: "Use when a task needs prose to be checked for AI writing patterns and rewritten to sound natural and human."
 compatibility: opencode
 metadata:
-  model: gpt-5.3-codex-spark
+  model: gpt-5.6-luna
   model_reasoning_effort: medium
   sandbox_mode: workspace-write
 ---

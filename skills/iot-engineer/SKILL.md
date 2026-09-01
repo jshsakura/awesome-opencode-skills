@@ -3,7 +3,7 @@ name: iot-engineer
 description: "Use when a task needs IoT system work involving devices, telemetry, edge communication, or cloud-device coordination."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: workspace-write
 ---

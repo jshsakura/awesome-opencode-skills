@@ -3,7 +3,7 @@ name: php-pro
 description: "Use when a task needs PHP expertise for application logic, framework integration, runtime debugging, or server-side code evolution."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: workspace-write
 ---

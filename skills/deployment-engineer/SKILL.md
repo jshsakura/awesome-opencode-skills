@@ -3,7 +3,7 @@ name: deployment-engineer
 description: "Use when a task needs deployment workflow changes, release strategy updates, or rollout and rollback safety analysis."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: workspace-write
 ---

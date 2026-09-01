@@ -3,7 +3,7 @@ name: agent-installer
 description: "Use when a task needs help selecting, copying, or organizing custom agent files from this repository into Codex agent directories."
 compatibility: opencode
 metadata:
-  model: gpt-5.3-codex-spark
+  model: gpt-5.6-luna
   model_reasoning_effort: medium
   sandbox_mode: read-only
 ---

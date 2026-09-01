@@ -3,7 +3,7 @@ name: windows-infra-admin
 description: "Use when a task needs Windows infrastructure administration across Active Directory, DNS, DHCP, GPO, or Windows automation."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

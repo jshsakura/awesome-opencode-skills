@@ -3,7 +3,7 @@ name: ui-ux-tester
 description: "Use when a task needs exhaustive UI and UX functional testing driven by documented user flows, with structured defect reporting."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

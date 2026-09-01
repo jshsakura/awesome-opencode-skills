@@ -3,7 +3,7 @@ name: database-optimizer
 description: "Use when a task needs database performance analysis for query plans, schema design, indexing, or data access patterns."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

@@ -3,7 +3,7 @@ name: research-analyst
 description: "Use when a task needs a structured investigation of a technical topic, implementation approach, or design question."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

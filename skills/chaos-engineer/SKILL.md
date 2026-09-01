@@ -3,7 +3,7 @@ name: chaos-engineer
 description: "Use when a task needs resilience analysis for dependency failure, degraded modes, recovery behavior, or controlled fault-injection planning."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

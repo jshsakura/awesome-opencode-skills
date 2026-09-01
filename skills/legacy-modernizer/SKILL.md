@@ -3,7 +3,7 @@ name: legacy-modernizer
 description: "Use when a task needs a modernization path for older code, frameworks, or architecture without losing behavioral safety."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

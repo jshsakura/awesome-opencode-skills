@@ -3,7 +3,7 @@ name: hallucination-investigator
 description: "Use when a task needs root-cause analysis for factuality failures, unsupported claims, or context breakdowns in AI outputs."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

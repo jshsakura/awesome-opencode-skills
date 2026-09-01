@@ -3,7 +3,7 @@ name: elixir-expert
 description: "Use when a task needs Elixir and OTP expertise for processes, supervision, fault tolerance, or Phoenix application behavior."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: workspace-write
 ---

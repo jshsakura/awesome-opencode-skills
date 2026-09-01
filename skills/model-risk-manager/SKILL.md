@@ -3,7 +3,7 @@ name: model-risk-manager
 description: "Use when a task needs model risk analysis, failure mode prioritization, and mitigation planning for AI behavior."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

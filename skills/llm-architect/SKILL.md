@@ -3,7 +3,7 @@ name: llm-architect
 description: "Use when a task needs architecture review for prompts, tool use, retrieval, evaluation, or multi-step LLM workflows."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

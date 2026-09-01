@@ -3,7 +3,7 @@ name: machine-learning-engineer
 description: "Use when a task needs ML system implementation work across training pipelines, feature flow, model serving, or inference integration."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: workspace-write
 ---

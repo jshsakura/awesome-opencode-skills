@@ -3,7 +3,7 @@ name: penetration-tester
 description: "Use when a task needs adversarial review of an application path for exploitability, abuse cases, or practical attack surface analysis."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

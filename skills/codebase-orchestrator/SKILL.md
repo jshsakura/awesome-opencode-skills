@@ -3,7 +3,7 @@ name: codebase-orchestrator
 description: "Use when a task needs repository-wide refactor governance with weighted risk prioritization, diff previews, and explicit approval gates before execution."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

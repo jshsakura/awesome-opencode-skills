@@ -3,7 +3,7 @@ name: error-coordinator
 description: "Use when multiple errors or symptoms need to be grouped, prioritized, and assigned to the right debugging or review agents."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

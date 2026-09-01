@@ -3,7 +3,7 @@ name: content-marketer
 description: "Use when a task needs product-adjacent content strategy or messaging that still has to stay grounded in real technical capabilities."
 compatibility: opencode
 metadata:
-  model: gpt-5.3-codex-spark
+  model: gpt-5.6-terra
   model_reasoning_effort: medium
   sandbox_mode: read-only
 ---

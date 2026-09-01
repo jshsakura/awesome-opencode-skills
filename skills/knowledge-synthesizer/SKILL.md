@@ -3,7 +3,7 @@ name: knowledge-synthesizer
 description: "Use when multiple agents have returned findings and the parent agent needs a distilled, non-redundant synthesis."
 compatibility: opencode
 metadata:
-  model: gpt-5.3-codex-spark
+  model: gpt-5.6-terra
   model_reasoning_effort: medium
   sandbox_mode: read-only
 ---

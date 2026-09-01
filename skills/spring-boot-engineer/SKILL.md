@@ -3,7 +3,7 @@ name: spring-boot-engineer
 description: "Use when a task needs Spring Boot expertise for service behavior, configuration, data access, or enterprise API implementation."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: workspace-write
 ---

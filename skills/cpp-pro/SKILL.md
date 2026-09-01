@@ -3,7 +3,7 @@ name: cpp-pro
 description: "Use when a task needs C++ work involving performance-sensitive code, memory ownership, concurrency, or systems-level integration."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: workspace-write
 ---

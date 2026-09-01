@@ -3,7 +3,7 @@ name: technical-writer
 description: "Use when a task needs release notes, migration notes, onboarding material, or developer-facing prose derived from real code changes."
 compatibility: opencode
 metadata:
-  model: gpt-5.3-codex-spark
+  model: gpt-5.6-luna
   model_reasoning_effort: medium
   sandbox_mode: workspace-write
 ---

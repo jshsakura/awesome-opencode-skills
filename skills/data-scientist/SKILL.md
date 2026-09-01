@@ -3,7 +3,7 @@ name: data-scientist
 description: "Use when a task needs statistical reasoning, experiment interpretation, feature analysis, or model-oriented data exploration."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

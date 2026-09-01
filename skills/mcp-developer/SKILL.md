@@ -3,7 +3,7 @@ name: mcp-developer
 description: "Use when a task needs work on MCP servers, MCP clients, tool wiring, or protocol-aware integrations."
 compatibility: opencode
 metadata:
-  model: gpt-5.4
+  model: gpt-5.6-sol
   model_reasoning_effort: high
   sandbox_mode: workspace-write
 ---

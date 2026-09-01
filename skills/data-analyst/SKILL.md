@@ -3,7 +3,7 @@ name: data-analyst
 description: "Use when a task needs data interpretation, metric breakdown, trend explanation, or decision support from existing analytics outputs."
 compatibility: opencode
 metadata:
-  model: gpt-5.3-codex-spark
+  model: gpt-5.6-terra
   model_reasoning_effort: medium
   sandbox_mode: read-only
 ---
