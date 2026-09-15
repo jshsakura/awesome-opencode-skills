@@ -6,7 +6,7 @@
 <br />
 
 <div align="center">
-    <strong>The awesome collection of 174+ Codex subagents across 13 categories.</strong>
+    <strong>The awesome collection of 175+ Codex subagents across 13 categories.</strong>
     <br />
     <br />
 </div>
@@ -15,7 +15,7 @@
 <div align="center">
     
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Subagent Count](https://img.shields.io/badge/subagents-174-blue?style=classic)
+![Subagent Count](https://img.shields.io/badge/subagents-175-blue?style=classic)
 [![Last Update](https://img.shields.io/github/last-commit/VoltAgent/awesome-codex-subagents?label=Last%20update&style=classic)](https://github.com/VoltAgent/awesome-codex-subagents)
 [![Discord](https://img.shields.io/discord/1361559153780195478.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://s.voltagent.dev/discord)
 
@@ -39,11 +39,11 @@
 # Awesome OpenCode Skills (Codex Subagents Port)
 
 **This repository is the automated OpenCode-converted version of the original Codex Subagents.**
-It takes the 174+ highly specialized Codex `.toml` subagents and translates them 1:1 into the native OpenCode `SKILL.md` format for seamless integration into your OpenCode workflow.
+It takes the 175+ highly specialized Codex `.toml` subagents and translates them 1:1 into the native OpenCode `SKILL.md` format for seamless integration into your OpenCode workflow.
 
 
 
-> **Note:** This repository ([jshsakura/awesome-opencode-skills](https://github.com/jshsakura/awesome-opencode-skills)) is an automatically synchronized port of the original [VoltAgent/awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents). All core subagents and credit belong to the original authors. This project simply adapts the 174+ subagents into the **OpenCode Skills** format (`SKILL.md`) for seamless use in OpenCode.
+> **Note:** This repository ([jshsakura/awesome-opencode-skills](https://github.com/jshsakura/awesome-opencode-skills)) is an automatically synchronized port of the original [VoltAgent/awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents). All core subagents and credit belong to the original authors. This project simply adapts the 175+ subagents into the **OpenCode Skills** format (`SKILL.md`) for seamless use in OpenCode.
 
 
 This repository serves as the definitive collection of [Codex Subagents](https://developers.openai.com/codex/subagents), specialized AI assistants designed for specific development tasks. Written specifically for Codex and aligned with the official docs.
@@ -51,7 +51,7 @@ This repository serves as the definitive collection of [Codex Subagents](https:/
 
 ## 🚀 Installation & Deployment
 
-OpenCode loads skills automatically from specific directories on your machine. You can install all 174+ skills via a single command:
+OpenCode loads skills automatically from specific directories on your machine. You can install all 175+ skills via a single command:
 
 **Windows (PowerShell)**:
 ```powershell
@@ -160,6 +160,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**accessibility-tester**](skills/accessibility-tester/SKILL.md) | Use when a task needs an accessibility audit of UI changes, interaction flows, or component behavior. |
 | [**ad-security-reviewer**](skills/ad-security-reviewer/SKILL.md) | Use when a task needs Active Directory security review across identity boundaries, delegation, GPO exposure, or directory hardening. |
 | [**ai-writing-auditor**](skills/ai-writing-auditor/SKILL.md) | Use when a task needs prose to be checked for AI writing patterns and rewritten to sound natural and human. |
+| [**anti-ui-slop-reviewer**](skills/anti-ui-slop-reviewer/SKILL.md) | Use when a web or iOS interface needs a product-specific finish-gate review for generic AI patterns, hierarchy, interaction states, responsive behavior, accessibility signals, or design-system drift. |
 | [**architect-reviewer**](skills/architect-reviewer/SKILL.md) | Use when a task needs architectural review for coupling, system boundaries, long-term maintainability, or design coherence. |
 | [**browser-debugger**](skills/browser-debugger/SKILL.md) | Use when a task needs browser-based reproduction, UI evidence gathering, or client-side debugging through a browser MCP server. |
 | [**chaos-engineer**](skills/chaos-engineer/SKILL.md) | Use when a task needs resilience analysis for dependency failure, degraded modes, recovery behavior, or controlled fault-injection planning. |
