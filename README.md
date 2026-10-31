@@ -183,7 +183,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | Skill | Description |
 |-------|-------------|
 | [**ai-engineer**](skills/ai-engineer/SKILL.md) | Use when a task needs implementation or debugging of model-backed application features, agent flows, or evaluation hooks. |
-| [**azure-databricks-platform-architect**](skills/azure-databricks-platform-architect/SKILL.md) | Use when a task needs end-to-end Azure Databricks platform architecture across lakehouse design, governance, compute, security, networking, reliability, and cost. |
+| [**azure-databricks-platform-architect**](skills/azure-databricks-platform-architect/SKILL.md) | Use when a task needs end-to-end Azure Databricks platform architecture across lakehouse design, governance, compute, security, networking, reliability, cost, Lakebase, and Databricks Apps. |
 | [**data-analyst**](skills/data-analyst/SKILL.md) | Use when a task needs data interpretation, metric breakdown, trend explanation, or decision support from existing analytics outputs. |
 | [**data-engineer**](skills/data-engineer/SKILL.md) | Use when a task needs ETL, ingestion, transformation, warehouse, or data-pipeline implementation and debugging. |
 | [**data-scientist**](skills/data-scientist/SKILL.md) | Use when a task needs statistical reasoning, experiment interpretation, feature analysis, or model-oriented data exploration. |

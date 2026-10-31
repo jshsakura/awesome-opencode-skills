@@ -3,7 +3,7 @@ name: api-documenter
 description: "Use when a task needs consumer-facing API documentation generated from the real implementation, schema, and examples."
 compatibility: opencode
 metadata:
-  model: gpt-5.6-terra
+  model: gpt-6.1-sol
   model_reasoning_effort: medium
   sandbox_mode: workspace-write
 ---

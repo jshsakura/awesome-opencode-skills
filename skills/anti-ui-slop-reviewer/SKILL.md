@@ -3,7 +3,7 @@ name: anti-ui-slop-reviewer
 description: "Use when a web or iOS interface needs a product-specific finish-gate review for generic AI patterns, hierarchy, interaction states, responsive behavior, accessibility signals, or design-system drift."
 compatibility: opencode
 metadata:
-  model: gpt-5.6-sol
+  model: gpt-6.1-sol
   model_reasoning_effort: high
   sandbox_mode: read-only
 ---

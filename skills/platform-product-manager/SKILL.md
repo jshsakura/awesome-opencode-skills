@@ -3,7 +3,7 @@ name: platform-product-manager
 description: "Use when a task needs platform roadmap, adoption strategy, success metrics, and stakeholder alignment for internal platform work."
 compatibility: opencode
 metadata:
-  model: gpt-5.6-terra
+  model: gpt-6.1-sol
   model_reasoning_effort: medium
   sandbox_mode: read-only
 ---

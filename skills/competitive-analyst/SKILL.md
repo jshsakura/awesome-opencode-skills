@@ -3,7 +3,7 @@ name: competitive-analyst
 description: "Use when a task needs a grounded comparison of tools, products, libraries, or implementation options."
 compatibility: opencode
 metadata:
-  model: gpt-5.6-terra
+  model: gpt-6.1-sol
   model_reasoning_effort: medium
   sandbox_mode: read-only
 ---

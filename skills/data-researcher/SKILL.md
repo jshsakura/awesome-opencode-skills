@@ -3,7 +3,7 @@ name: data-researcher
 description: "Use when a task needs source gathering and synthesis around datasets, metrics, data pipelines, or evidence-backed quantitative questions."
 compatibility: opencode
 metadata:
-  model: gpt-5.6-terra
+  model: gpt-6.1-sol
   model_reasoning_effort: medium
   sandbox_mode: read-only
 ---

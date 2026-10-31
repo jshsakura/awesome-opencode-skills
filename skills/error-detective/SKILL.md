@@ -3,7 +3,7 @@ name: error-detective
 description: "Use when a task needs log, exception, or stack-trace analysis to identify the most probable failure source quickly."
 compatibility: opencode
 metadata:
-  model: gpt-5.6-terra
+  model: gpt-6.1-sol
   model_reasoning_effort: medium
   sandbox_mode: read-only
 ---

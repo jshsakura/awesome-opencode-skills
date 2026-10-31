@@ -3,7 +3,7 @@ name: documentation-engineer
 description: "Use when a task needs technical documentation that must stay faithful to current code, tooling, and operator workflows."
 compatibility: opencode
 metadata:
-  model: gpt-5.6-terra
+  model: gpt-6.1-sol
   model_reasoning_effort: medium
   sandbox_mode: workspace-write
 ---
