@@ -6,7 +6,7 @@
 <br />
 
 <div align="center">
-    <strong>The awesome collection of 175+ Codex subagents across 13 categories.</strong>
+    <strong>The awesome collection of 176+ Codex subagents across 13 categories.</strong>
     <br />
     <br />
 </div>
@@ -15,7 +15,7 @@
 <div align="center">
     
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Subagent Count](https://img.shields.io/badge/subagents-175-blue?style=classic)
+![Subagent Count](https://img.shields.io/badge/subagents-176-blue?style=classic)
 [![Last Update](https://img.shields.io/github/last-commit/VoltAgent/awesome-codex-subagents?label=Last%20update&style=classic)](https://github.com/VoltAgent/awesome-codex-subagents)
 [![Discord](https://img.shields.io/discord/1361559153780195478.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://s.voltagent.dev/discord)
 
@@ -39,11 +39,11 @@
 # Awesome OpenCode Skills (Codex Subagents Port)
 
 **This repository is the automated OpenCode-converted version of the original Codex Subagents.**
-It takes the 175+ highly specialized Codex `.toml` subagents and translates them 1:1 into the native OpenCode `SKILL.md` format for seamless integration into your OpenCode workflow.
+It takes the 176+ highly specialized Codex `.toml` subagents and translates them 1:1 into the native OpenCode `SKILL.md` format for seamless integration into your OpenCode workflow.
 
 
 
-> **Note:** This repository ([jshsakura/awesome-opencode-skills](https://github.com/jshsakura/awesome-opencode-skills)) is an automatically synchronized port of the original [VoltAgent/awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents). All core subagents and credit belong to the original authors. This project simply adapts the 175+ subagents into the **OpenCode Skills** format (`SKILL.md`) for seamless use in OpenCode.
+> **Note:** This repository ([jshsakura/awesome-opencode-skills](https://github.com/jshsakura/awesome-opencode-skills)) is an automatically synchronized port of the original [VoltAgent/awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents). All core subagents and credit belong to the original authors. This project simply adapts the 176+ subagents into the **OpenCode Skills** format (`SKILL.md`) for seamless use in OpenCode.
 
 
 This repository serves as the definitive collection of [Codex Subagents](https://developers.openai.com/codex/subagents), specialized AI assistants designed for specific development tasks. Written specifically for Codex and aligned with the official docs.
@@ -51,7 +51,7 @@ This repository serves as the definitive collection of [Codex Subagents](https:/
 
 ## 🚀 Installation & Deployment
 
-OpenCode loads skills automatically from specific directories on your machine. You can install all 175+ skills via a single command:
+OpenCode loads skills automatically from specific directories on your machine. You can install all 176+ skills via a single command:
 
 **Windows (PowerShell)**:
 ```powershell
@@ -171,6 +171,7 @@ This repository maintains a 1:1 synchronization with the original `VoltAgent` re
 | [**gdpr-ccpa-compliance**](skills/gdpr-ccpa-compliance/SKILL.md) | Use when a task needs GDPR or CCPA/CPRA compliance review of data practices, consent flows, or data-subject rights handling. |
 | [**penetration-tester**](skills/penetration-tester/SKILL.md) | Use when a task needs adversarial review of an application path for exploitability, abuse cases, or practical attack surface analysis. |
 | [**performance-engineer**](skills/performance-engineer/SKILL.md) | Use when a task needs performance investigation for slow requests, hot paths, rendering regressions, or scalability bottlenecks. |
+| [**ponder-reviewer**](skills/ponder-reviewer/SKILL.md) | Use when a pull request, module, security boundary, or product flow needs a coverage-gated, multi-pass deliberative review where every unit is graded and false positives are retracted before reporting. |
 | [**powershell-security-hardening**](skills/powershell-security-hardening/SKILL.md) | Use when a task needs PowerShell-focused hardening across script safety, admin automation, execution controls, or Windows security posture. |
 | [**qa-expert**](skills/qa-expert/SKILL.md) | Use when a task needs test strategy, acceptance coverage planning, or risk-based QA guidance for a feature or release. |
 | [**reviewer**](skills/reviewer/SKILL.md) | Use when a task needs PR-style review focused on correctness, security, behavior regressions, and missing tests. |
